@@ -1,6 +1,9 @@
 <template>
 	<article>
-		<component :is="heading">Title</component>
+		<component :is="heading">{{ info.title }}</component>
+		<p>{{ info.content }}</p>
+
+		
 	</article>
 </template>
 
@@ -14,8 +17,8 @@ export default {
 		info: Object, 
 		/* { 
 			title: String, 
-			Content: String, 
-			CTAButton: String (optional), 
+			content: String, 
+			cta: String (optional), 
 		} */
 
 		// Optional Props

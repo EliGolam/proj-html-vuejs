@@ -24,14 +24,22 @@
 
 // CONTAINERS
 .container {
-    @include container-config();
-    padding: $_size-6 $_size-5;
-
-    @media only screen and (min-width: $lg-breakpoint) {
-        padding: $_size-5;
-        max-width: $max-w-container;
-    }
+    @include base-container();
 }
+
+.container-info {
+    @include base-container();
+
+    // FLEX 
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .info-card {
+      max-width: 40ch;
+    }
+  }  
+  
 
 .wide-container {
     @include container-config();

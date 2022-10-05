@@ -51,7 +51,12 @@ header {
 	$logo-size: 150px;
 	$default-padding: $_size-6;
 
+	// Position for parallax effect
+	position: fixed;
+		top: 0;
 	
+	width: 100%;
+
 	// Flex Container
 	display: flex;
 	align-items: center;

@@ -2,7 +2,7 @@
 @import 'variables.scss';
 
 
-$fs-default: $fs-4;
+$fs-default: $fs-6;
 $fw-default: $fw-medium;
 $f-line-height: 1.5;
 
@@ -12,6 +12,8 @@ $default-font-settings: $fw-default $fs-default $ff-default;
     font: $default-font-settings;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    line-height: $f-line-height;
 
     // FLEX
     display: flex;
@@ -39,6 +41,9 @@ $default-font-settings: $fw-default $fs-default $ff-default;
         // Size
         width: 100%;
         min-height: 800px;
+
+        // Position parallax content
+        position: relative;
     }
 }
 
