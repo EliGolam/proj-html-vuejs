@@ -35,6 +35,7 @@
 
 .wide-container {
     @include container-config();
+    padding: $_size-2 $_size-5;
 }
 
 // Flex

@@ -32,6 +32,8 @@ I then created the Vue2 App through VueCli, my settings included:
 
 I added the router plugin because the website at the top has different pages. These can be simulated by Vue using Routers and RouterViews. I decided to implement the History more for router links to emulate traditional multi-page websites. This does require an additional setup when working on the backend server to make sure that the search recognizes these simulated pages. It is not too difficult though, and the documentation can be found here: [Vue Router History Mode](https://v3.router.vuejs.org/guide/essentials/history-mode.html).
 
+For many of the images I will create an assets/images in the public folder following VueCli guidelines (found at the bottom of the page): [When to use public folder](https://cli.vuejs.org/guide/html-and-static-assets.html#the-public-folder)
+
 ## Versions
 
 ### Implmenting Header

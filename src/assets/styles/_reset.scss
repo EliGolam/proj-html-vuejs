@@ -25,6 +25,11 @@ body {
     text-rendering: optimizeSpeed;
 }
 
+/* Images easier to work with */
+img {
+    width: 100%;
+}
+
 /* Element Defaults */
 :is(ol, ul)[class],
 :is(ol, ul)[id] {
