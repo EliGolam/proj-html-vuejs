@@ -52,6 +52,14 @@
 // NAV
 .nav-link {
     cursor: pointer;
+
+    // Font
+    font-size: $fs-8;
+    text-transform: uppercase;
+
+	&.router-link-exact-active {
+		color: $clr-primary-purple;
+	}
 }
 
 // SCROLLER 

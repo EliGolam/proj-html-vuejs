@@ -4,6 +4,7 @@
       <RoutingNavLinkComponent v-for="navLink in navLinks" 
 				:key="navLink.name" 
 				:link="navLink"
+				class="nav-link"
 			/>
 			<!-- <router-link to="/">Home</router-link> 
       <router-link to="/about">About</router-link> -->
@@ -33,19 +34,10 @@ export default {
 	
 nav {
 	// Local Variables
-	$c-gap: $_size-2;
+	$c-gap: $_size-6;
 	
 	// Flex Container
 	display: flex;
 	column-gap: $c-gap;
-
-	a {
-		font-weight: bold;
-		color: #2c3e50;
-
-		&.router-link-exact-active {
-			color: #42b983;
-		}
-	}
 }
 </style>
