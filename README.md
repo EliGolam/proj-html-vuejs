@@ -32,6 +32,26 @@ I then created the Vue2 App through VueCli, my settings included:
 
 I added the router plugin because the website at the top has different pages. These can be simulated by Vue using Routers and RouterViews. I decided to implement the History more for router links to emulate traditional multi-page websites. This does require an additional setup when working on the backend server to make sure that the search recognizes these simulated pages. It is not too difficult though, and the documentation can be found here: [Vue Router History Mode](https://v3.router.vuejs.org/guide/essentials/history-mode.html).
 
+## Versions
+
+### Implmenting Header
+
+#### 0.1.3: Dynamically generated navLinks in the header
+
+#### 0.1.2: Created navLinksData.js for storing data
+
+#### 0.1.1: Created Page Header Component and its components
+
+### Setup
+
+#### 0.0.4: Added basic styling
+
+#### 0.0.3: Created base macrostructure
+
+#### 0.0.2: Created Views
+
+#### 0.0.1: Created the scaffolding
+
 ## Project setup
 
 ```shell
