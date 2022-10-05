@@ -1,5 +1,5 @@
 <template>
-	<a href="#" class="navLink">My Account</a>
+	<a href="#" class="nav-link">My Account</a>
 </template>
 
 <script>

@@ -1,12 +1,10 @@
 <template>
-  <div>
-
-  </div>
+  <font-awesome-icon :icon="['fas', 'cart-shopping']" />
 </template>
 
 <script>
   export default {
-    
+    name: 'ShoppingCartComponent'
   }
 </script>
 

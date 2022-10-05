@@ -1,13 +1,21 @@
 <template>
 	<header>
-		
+		<MyAccountComponent />
+		<ShoppingCartComponent />
 	</header>
 </template>
 
 <script>
-	export default {
-		
-	}
+import MyAccountComponent from '../MyAccountComponent.vue';
+import ShoppingCartComponent from '../ShoppingCartComponent.vue';
+
+
+export default {
+    components: {
+    MyAccountComponent,
+    ShoppingCartComponent
+}
+}
 </script>
 
 <style lang="scss" scoped>
