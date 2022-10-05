@@ -23,6 +23,15 @@ Instead of jumping in blind, I decided to sit down and create the **abstract str
 
 The abstract structure of my project can be found here: [Bakery Project](https://www.figma.com/file/8rrldVduPNee50hDXEfqFx/Boolean-Project-%2F-Case-Study%3A-Bakery?node-id=0%3A1).
 
+I then created the Vue2 App through VueCli, my settings included:
+
+* Babel
+* CSS Preprocessor
+* ESLint only errors
+* Router
+
+I added the router plugin because the website at the top has different pages. These can be simulated by Vue using Routers and RouterViews. I decided to implement the History more for router links to emulate traditional multi-page websites. This does require an additional setup when working on the backend server to make sure that the search recognizes these simulated pages. It is not too difficult though, and the documentation can be found here: [Vue Router History Mode](https://v3.router.vuejs.org/guide/essentials/history-mode.html).
+
 ## Project setup
 
 ```shell

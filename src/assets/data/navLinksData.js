@@ -1,10 +1,10 @@
 /* Link Class */
 class Link {
-    constructor (name, path) {
-        this.name = name;
+    constructor (path, name) {
         this.path = path;
+        this.name = name;   
     }
-};
+}
 
 const HEADER_LINKS = [];
 
