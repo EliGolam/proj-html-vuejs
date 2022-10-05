@@ -16,6 +16,17 @@ $dark-gradient: linear-gradient(
 /* FONT */
 $ff-fallback: Helvetica, Arial, sans-serif;
 
+/* FONTS */
+// Montserrat (Google Font)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,800&display=swap');
+// Source Serif Pro (Google Font)
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+
+
+// Set Defaults
+$ff-default: 'Montserrat', $ff-fallback;
+$ff-secondary: 'Source Serif Pro', serif;
+
 // Size
 $fs-1: 2rem;
 $fs-2: 1.6rem;
