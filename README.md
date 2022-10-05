@@ -6,7 +6,7 @@ Languages uses:
 * HTML
 * CSS
 * JavaScript
-* Framework: Vue
+* Framework: **Vue**
 
 ## Project Directions
 
