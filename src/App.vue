@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <PageHeader />
+    <div class="hero-bg">
+      <PageHeader />
+
+      <InfoArticleComponent />
+    </div>
+    
 
     <router-view/>
   </div>
@@ -8,11 +13,13 @@
 
 <script>
 import PageHeader from './components/mainComponents/PageHeader.vue';
+import InfoArticleComponent from './components/InfoArticleComponent.vue';
 
 export default {
-  components: { 
-    PageHeader
-  }
+  components: {
+    PageHeader,
+    InfoArticleComponent
+}
 }
 </script>
 

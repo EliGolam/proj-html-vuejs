@@ -1,15 +1,14 @@
 <template>
-	<header class="wide-container hero-bg">
+	<header class="wide-container">
 
-		<div class="navigation">
-			<div class="logo-container"> <img :src="logoSrc" alt="The Bakery"> </div>
+		<div class="logo-container"> <img :src="logoSrc" alt="The Bakery"> </div>
 
-			<NavBarComponent :navLinks="links" class="nav-bar" />
+		<NavBarComponent :navLinks="links" class="nav-bar" />
 
-			<MyAccountComponent class="my-account" />
+		<MyAccountComponent class="my-account" />
 
-			<ShoppingCartComponent />	
-		</div>
+		<ShoppingCartComponent />	
+
 	</header>
 </template>
 
@@ -20,7 +19,6 @@ import NavBarComponent from '@/components//NavBarComponent.vue';
 
 // Import Data
 import { NAV_LINKS } from '@/assets/data/navLinksData'
-
 
 
 export default {
@@ -53,39 +51,22 @@ header {
 	$logo-size: 150px;
 	$default-padding: $_size-6;
 
-	.navigation {
-		// Flex Container
-		display: flex;
-		align-items: center;
 	
-		// Flex Items
-		.logo-container {
-			width: $logo-size;
-		}
+	// Flex Container
+	display: flex;
+	align-items: center;
 
-		.nav-bar {
-			margin-left: auto; // Align Content to the right
-		}
-
-		.my-account {
-			margin: 0 $default-padding;
-		}
+	// Flex Items
+	.logo-container {
+		width: $logo-size;
 	}
 
-}
+	.nav-bar {
+		margin-left: auto; // Align Content to the right
+	}
 
-.hero-bg {
-	// HERO BG
-	background-image: url('@/assets/images/hero-header-bakery.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	// Parallax
-	background-attachment: fixed;
-	background-position: center;
-
-	// Size
-	width: 100%;
-	min-height: 800px;
+	.my-account {
+		margin: 0 $default-padding;
+	}
 }
 </style>
