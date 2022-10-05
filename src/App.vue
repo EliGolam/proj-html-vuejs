@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div class="hero-bg">
-      <PageHeader />
+    <PageHeader />
 
+    <div class="hero-bg">
       <div class="container-info">
-        <InfoArticleComponent :info="heroText" class="info-card" />
+        <InfoArticleComponent 
+          :info="heroText" 
+          :withCTA="true"
+          :CTABtnType="'light'"
+          class="info-card" 
+        />
       </div>
     </div>
     

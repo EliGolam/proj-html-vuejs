@@ -51,8 +51,8 @@ header {
 	$logo-size: 150px;
 	$default-padding: $_size-6;
 
-	// Position for parallax effect
-	position: fixed;
+	// Position for overlapping with Hero BG
+	position: absolute;
 		top: 0;
 	
 	width: 100%;
