@@ -1,16 +1,10 @@
 /* Color Scheme */
-// BRAND COLORS
-$clr-primary-orange: rgb(245, 126, 0);
-$clr-primary-red: rgb(215, 40, 40);
-$clr-primary-dark: rgb(8, 18, 27);
-$clr-primary-light: rgb(255, 255, 255);
-
-$clr-dark-blue: rgb(18, 35, 78);
+@import '_color-scheme.scss';
 
 // GRADIENTS
 $dark-gradient: linear-gradient(
-    rgba($clr-dark-blue, 1),
-    rgba($clr-primary-dark, 1)
+    rgba($clr-primary-purple, 1),
+    rgba($clr-primary-dark-purple, 1)
 );
 
 /* FONT */
