@@ -8,7 +8,6 @@ export default {
 
 	props: {
 		link: Object, /* Format { name: 'String', path: 'String' } */
-		
 	}
 }
 </script>

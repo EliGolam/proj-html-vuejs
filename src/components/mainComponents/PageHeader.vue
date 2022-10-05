@@ -1,12 +1,15 @@
 <template>
-	<header class="wide-container">
-		<div class="logo-container"> <img :src="logoSrc" alt="The Bakery"> </div>
+	<header class="wide-container hero-bg">
 
-		<NavBarComponent :navLinks="links" class="nav-bar" />
+		<div class="navigation">
+			<div class="logo-container"> <img :src="logoSrc" alt="The Bakery"> </div>
 
-		<MyAccountComponent class="my-account" />
+			<NavBarComponent :navLinks="links" class="nav-bar" />
 
-		<ShoppingCartComponent />
+			<MyAccountComponent class="my-account" />
+
+			<ShoppingCartComponent />	
+		</div>
 	</header>
 </template>
 
@@ -50,21 +53,39 @@ header {
 	$logo-size: 150px;
 	$default-padding: $_size-6;
 
-	// Flex Container
-	display: flex;
-	align-items: center;
+	.navigation {
+		// Flex Container
+		display: flex;
+		align-items: center;
+	
+		// Flex Items
+		.logo-container {
+			width: $logo-size;
+		}
 
-	// Flex Items
-	.logo-container {
-		width: $logo-size;
+		.nav-bar {
+			margin-left: auto; // Align Content to the right
+		}
+
+		.my-account {
+			margin: 0 $default-padding;
+		}
 	}
 
-	.nav-bar {
-		margin-left: auto; // Align Content to the right
-	}
+}
 
-	.my-account {
-		margin: 0 $default-padding;
-	}
+.hero-bg {
+	// HERO BG
+	background-image: url('@/assets/images/hero-header-bakery.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// Parallax
+	background-attachment: fixed;
+	background-position: center;
+
+	// Size
+	width: 100%;
+	min-height: 800px;
 }
 </style>
