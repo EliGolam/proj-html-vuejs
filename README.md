@@ -38,6 +38,8 @@ For many of the images I will create an assets/images in the public folder follo
 
 ### Implmenting Header
 
+#### 0.1.4: Completed Styling of the Header
+
 #### 0.1.3: Dynamically generated navLinks in the header
 
 #### 0.1.2: Created navLinksData.js for storing data

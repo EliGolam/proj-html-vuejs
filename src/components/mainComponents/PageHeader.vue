@@ -4,7 +4,7 @@
 
 		<NavBarComponent :navLinks="links" class="nav-bar" />
 
-		<MyAccountComponent />
+		<MyAccountComponent class="my-account" />
 
 		<ShoppingCartComponent />
 	</header>
@@ -43,8 +43,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
 header {
+	// VARIABLES
 	$logo-size: 150px;
+	$default-padding: $_size-6;
 
 	// Flex Container
 	display: flex;
@@ -57,6 +61,10 @@ header {
 
 	.nav-bar {
 		margin-left: auto; // Align Content to the right
+	}
+
+	.my-account {
+		margin: 0 $default-padding;
 	}
 }
 </style>
