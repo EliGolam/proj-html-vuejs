@@ -1,15 +1,25 @@
 <template>
 	<div>
 		<nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <RoutingNavLinkComponent v-for="navLink in navLinks" :link="navLink"/>
+			<!-- <router-link to="/">Home</router-link> 
+      <router-link to="/about">About</router-link> -->
     </nav>
 	</div>
 </template>
 
 <script>
+import RoutingNavLinkComponent from './RoutingNavLinkComponent.vue';
+
 export default {
-	
+    name: "NavBarComponent",
+    props: {
+        navLinks: Array, // Array of Objects
+        /* Format
+        [ { name: 'String', path: 'String' } ]
+        */
+    },
+    components: { RoutingNavLinkComponent }
 }
 </script>
 

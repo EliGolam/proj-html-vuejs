@@ -11,10 +11,16 @@ import ShoppingCartComponent from '../ShoppingCartComponent.vue';
 
 
 export default {
-    components: {
-    MyAccountComponent,
-    ShoppingCartComponent
-}
+	data() {
+		return {
+			
+		}
+	},
+
+  components: {
+			MyAccountComponent,
+			ShoppingCartComponent
+	}
 }
 </script>
 
