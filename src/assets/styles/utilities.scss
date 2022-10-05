@@ -56,10 +56,21 @@
     // Font
     font-size: $fs-8;
     text-transform: uppercase;
+    color: $clr-primary-dark-purple;
+
+    padding: $_size-4 0;
+    border-bottom: 2px solid transparent;
+
+    // Transitions
+    transition: border-bottom 200ms ease;
 
 	&.router-link-exact-active {
-		color: $clr-primary-purple;
+        border-color: $clr-primary-dark-purple;
 	}
+
+    &:hover {
+        border-color: $clr-primary-purple;
+    }
 }
 
 // SCROLLER 
