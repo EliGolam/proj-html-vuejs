@@ -15,6 +15,14 @@ $center-fade-gradient-purple: linear-gradient(
     rgba($clr-primary-purple, 0),
 );
 
+$center-fade-gradient-purple-light: linear-gradient(
+    rgba($clr-primary-purple, 0),
+    rgba($clr-primary-purple, .2),
+    rgba($clr-primary-purple, .5),
+    rgba($clr-primary-purple, .2),
+    rgba($clr-primary-purple, 0),
+);
+
 /* FONT */
 $ff-fallback: Helvetica, Arial, sans-serif;
 

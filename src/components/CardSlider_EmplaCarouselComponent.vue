@@ -84,8 +84,17 @@ export default {
 
 	position: absolute;
 
-	background: $center-fade-gradient-purple;
 	color: $clr-light;
+
+	background: $center-fade-gradient-purple;
+	opacity: .65;
+
+	// Transitions
+	transition: opacity 200ms ease;
+
+	&:hover {
+		opacity: 1;
+	}
 
 	&.slider-horizontal{
 		top: 50%;
