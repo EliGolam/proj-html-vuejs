@@ -15,6 +15,7 @@
 		<CTAButtonComponent v-if="withCTA"
 			:buttonText="info.cta"
 			:buttonType="CTABtnType"
+            class="cta-btn"
 		/>
 	</article>
 </template>
@@ -87,5 +88,9 @@ export default {
 
 .defaultStyle {
     color: $clr-dark;
+}
+
+.cta-btn {
+    margin: $_size-4 0;
 }
 </style>
