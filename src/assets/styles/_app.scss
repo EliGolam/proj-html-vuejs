@@ -24,23 +24,6 @@ $default-font-settings: $fw-default $fs-default $ff-default;
     overflow: auto;
 
     // Aesthetics
-    color: $clr-dark;
-
-
-    // HERO BG
-    .hero-bg {
-        // HERO BG
-        background-image: url('@/assets/images/hero-header-bakery.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        // Parallax
-        background-attachment: fixed;
-        background-position: center;
-    
-        // Size
-        width: 100%;
-        min-height: 800px;
-    }
+    color: $clr-dark;  
 }
 

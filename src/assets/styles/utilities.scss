@@ -25,25 +25,11 @@
 // CONTAINERS
 .container {
     @include base-container();
-}
-
-.container-info {
-    @include base-container();
-
-    // FLEX 
-    display: flex;
-    align-items: center;
-    height: 100%;
-
-    .info-card {
-      max-width: 40ch;
-    }
-  }  
-  
+} 
 
 .wide-container {
     @include container-config();
-    padding: $_size-2 $_size-5;
+    padding: $_size-2 $_size-6
 }
 
 // Flex
@@ -81,6 +67,11 @@
     }
 }
 
+// Cards
+.info-card {
+    max-width: 40ch;
+}
+
 // SCROLLER 
 .scroll-snap {
     scroll-snap-type: inline mandatory;
@@ -88,4 +79,20 @@
 
 .scroll-snap > * {
     scroll-snap-align: center;
+}
+
+// Font
+.ff-default {
+    font-family: $ff-default;
+}
+
+.ff-secondary {
+    font-family: $ff-secondary;
+}
+
+.font-subtle-caps {
+    font-size: $fs-9;
+    font-weight: $fw-regular;
+    text-transform: uppercase;
+    letter-spacing: .3em;
 }

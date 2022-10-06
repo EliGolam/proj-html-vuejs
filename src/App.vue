@@ -1,26 +1,16 @@
 <template>
   <div id="app">
-    <PageHeader />
-
-    <div class="hero-bg">
-      <div class="container-info">
-        <InfoArticleComponent 
-          :info="heroText" 
-          :withCTA="true"
-          :CTABtnType="'light'"
-          class="info-card" 
-        />
-      </div>
-    </div>
+    <PageHeader v-if="$route.name !== 'home'" /> <!-- v-if to prevent duplicate headers since homeview has one -->
     
-
+    <!-- Router View -->
     <router-view/>
   </div>
 </template>
 
+
+<!-- SCRIPT -->
 <script>
 import PageHeader from '@/components/mainComponents/PageHeader.vue';
-import InfoArticleComponent from '@/components/InfoArticleComponent.vue';
 
 import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData';
 
@@ -35,12 +25,8 @@ export default {
 
   components: {
     PageHeader,
-    InfoArticleComponent
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
 
