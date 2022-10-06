@@ -13,11 +13,12 @@
 </template>
 
 <script>
-import InfoArticleComponent from '../InfoArticleComponent.vue';
+import InfoArticleComponent from '@/shared/InfoArticleComponent.vue';
+import CardSlider from '@/shared/CardSlider_EmplaCarouselComponent.vue';
 
 // DATA
 import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData.js';
-import CardSlider from '../CardSlider_EmplaCarouselComponent.vue';
+
 
 export default {
 	name: "OurProductsSection",

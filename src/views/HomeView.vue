@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <div class="top-hero-section">
-      <PageHeader class="header" />
-      <HomeHeroSplash />
-    </div>
+    
 
     <OurProductsSection id='our-products'/>
     
@@ -11,16 +8,14 @@
 </template>
 
 <script>
-import HomeHeroSplash from '@/components/mainComponents/HomeHeroSplash.vue';
-import PageHeader from '@/components/mainComponents/PageHeader.vue';
-import OurProductsSection from '@/components/sectionComponents/OurProductsSection.vue';
+
+import OurProductsSection from '@/macrosections/OurProductsSection.vue';
 
 export default {
   name: "HomeView",
 
   components: {
-    HomeHeroSplash,
-    PageHeader,
+
     OurProductsSection
 }
 }
@@ -28,12 +23,5 @@ export default {
 
 
 <style lang="scss" scoped>
-.top-hero-section {
-  position: relative;
 
-  .header {
-    position: absolute;
-      top: 0;
-  }
-}
 </style>

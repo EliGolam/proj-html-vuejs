@@ -1,16 +1,16 @@
 <template>
 	<article>
 		<component 
-            :is="heading" 
-            :class="[titleEmphasis, emphasisSize]"
-            >
-            {{ info.title }}
-        </component>
+      :is="heading" 
+      :class="[titleEmphasis, emphasisSize]"
+      >
+      {{ info.title }}
+    </component>
 
 		<p 
-            :class="[contentEmphasis, emphasisSize]"
-            >{{ info.content }}
-        </p>
+      :class="[contentEmphasis, emphasisSize]"
+      >{{ info.content }}
+  </p>
 
 		<CTAButtonComponent v-if="withCTA"
 			:buttonLink="buttonLink"
@@ -35,7 +35,7 @@ export default {
         } */
 				
         // Optional Props
-        heading: {
+        heading: { // Title Tag invece di heading
             type: String,
             default: "h2",
         },

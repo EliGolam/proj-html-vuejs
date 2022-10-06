@@ -13,32 +13,32 @@ const routes = [
   {
     path: '/shop',
     name: 'shop',
-    component: () => import(/* webpackChunkName: */ '../views/ShopView.vue')
+    component: () => import('@/views/ShopView.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: */ '../views/AboutView.vue')
+    component: () => import('@/views/AboutView.vue')
   },
   {
     path: '/gallery',
     name: 'gallery',
-    component: () => import(/* webpackChunkName: */ '../views/GalleryView.vue')
+    component: () => import('@/views/GalleryView.vue')
   },
   {
     path: '/locations',
     name: 'locations',
-    component: () => import(/* webpackChunkName: */ '../views/LocationsView.vue')
+    component: () => import('@/views/LocationsView.vue')
   },
   {
     path: '/journal',
     name: 'journal',
-    component: () => import(/* webpackChunkName: */ '../views/JournalView.vue')
+    component: () => import('@/views/JournalView.vue')
   },
   {
     path: '/contact',
     name: 'contact',
-    component: () => import(/* webpackChunkName: */ '../views/ContactView.vue')
+    component: () => import('@/views/ContactView.vue')
   },
 ]
 

@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <PageHeader v-if="$route.name !== 'home'" /> <!-- v-if to prevent duplicate headers since homeview has one -->
+    <AppHeader v-if="$route.name !== 'home'" /> <!-- v-if to prevent duplicate headers since homeview has one -->
+    <AppHeaderWithHeroBG v-else />
+    <!-- Implement here with v-else as component -->
     
+
+
     <!-- Router View -->
     <router-view/>
   </div>
@@ -10,22 +14,16 @@
 
 <!-- SCRIPT -->
 <script>
-import PageHeader from '@/components/mainComponents/PageHeader.vue';
-
-import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData';
+import AppHeader from '@/components/AppHeader.vue';
+import AppHeaderWithHeroBG from './components/AppHeaderWithHeroBG.vue';
 
 export default {
   name: 'App',
 
-  data() {
-    return {
-      heroText: PAGE_TEXT_DATA.heroText,
-    }
-  },
-
   components: {
-    PageHeader,
-  }
+    AppHeader,
+    AppHeaderWithHeroBG
+}
 }
 </script>
 

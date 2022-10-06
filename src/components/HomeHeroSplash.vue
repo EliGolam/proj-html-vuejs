@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import InfoArticleComponent from '@/components/InfoArticleComponent.vue';
+import InfoArticleComponent from '@/shared/InfoArticleComponent.vue';
 
 import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData';
 

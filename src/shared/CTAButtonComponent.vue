@@ -1,5 +1,5 @@
 <template>
-	<RoutingNavLinkComponent :link="buttonLink" class="button" />
+	<RoutingNavLinkComponent :link="buttonLink" class="button-link" :class="buttonType"/>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-.button {
+.button-link {
 	// Variables
 	$padding-x: $_size-4;
 	$padding-y: $_size-1;
@@ -32,6 +32,8 @@ export default {
 	// Shape
 	padding: $padding-y $padding-x;
 	border-radius: $radius;
+
+  margin-top: .5rem;
 
 	// Transitions
 	transition: 

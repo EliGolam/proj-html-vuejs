@@ -1,3 +1,4 @@
+// Classes
 class InfoCard {
     constructor (title, content, cta, ctaPath) {
         this.title = title;
@@ -7,6 +8,8 @@ class InfoCard {
     }
 }
 
+
+// Muovi In data
 const HERO_TEXT = new InfoCard (
     'The Perfect Fresh Bread',
     'Cras tempor sit amet tellus a tincidunt. Pellentesque in odio eget felis pellentesque laoreet tristique vitae dolor.',
@@ -22,8 +25,9 @@ const OUR_PRODUCTS_TEXT = new InfoCard (
     'Start Shopping',
     '/shop'
 )
+/////////////////////////////////////
 
-
+//
 export const PAGE_TEXT_DATA = {
     heroText: HERO_TEXT,
     heroInfo: HERO_INFO,
