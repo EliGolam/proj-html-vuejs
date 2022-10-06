@@ -7,6 +7,8 @@
 			:emphasisedText="'onContent'"
 			class="info-card"
 		/>
+
+		<CardSlider />
 	</section>
 </template>
 
@@ -15,6 +17,7 @@ import InfoArticleComponent from '../InfoArticleComponent.vue';
 
 // DATA
 import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData.js';
+import CardSlider from '../CardSlider_EmplaCarouselComponent.vue';
 
 export default {
 	name: "OurProductsSection",
@@ -25,9 +28,10 @@ export default {
 		}
 	},
 
-	components: { 
-		InfoArticleComponent 
-	}
+	components: {
+    InfoArticleComponent,
+    CardSlider,
+}
 }
 </script>
 

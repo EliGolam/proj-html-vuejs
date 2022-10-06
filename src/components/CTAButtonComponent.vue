@@ -16,10 +16,6 @@ export default {
 @import '@/assets/styles/variables';
 
 button {
-	// Reset default
-	border: none;
-	cursor: pointer;
-
 	// Variables
 	$padding-x: $_size-4;
 	$padding-y: $_size-1;

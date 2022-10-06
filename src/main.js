@@ -9,8 +9,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // Icons
 import { faCartShopping as fasCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight, faAngleLeft, faAnglesUp, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fasCartShopping )  
+
+library.add( fasCartShopping, faAngleRight, faAngleLeft, faAnglesUp, faAngleDown )  
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

@@ -42,6 +42,12 @@ a {
     color: inherit;
 }
 
+button {
+    // Reset default
+	border: none;
+	cursor: pointer;
+}
+
 /* Font Inheritance */
 input,
 button,
@@ -50,3 +56,4 @@ select,
 option {
     font: inherit;
 }
+

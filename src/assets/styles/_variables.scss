@@ -7,6 +7,14 @@ $dark-gradient: linear-gradient(
     rgba($clr-primary-dark-purple, 1)
 );
 
+$center-fade-gradient-purple: linear-gradient(
+    rgba($clr-primary-purple, 0),
+    rgba($clr-primary-purple, .5),
+    rgba($clr-primary-purple, 1),
+    rgba($clr-primary-purple, .5),
+    rgba($clr-primary-purple, 0),
+);
+
 /* FONT */
 $ff-fallback: Helvetica, Arial, sans-serif;
 
