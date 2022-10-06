@@ -38,25 +38,11 @@ For many of the images I will create an assets/images in the public folder follo
 
 ### Implmenting Header
 
-#### 0.1.4: Completed Styling of the Header
-
-#### 0.1.3: Dynamically generated navLinks in the header
-
-#### 0.1.2: Created navLinksData.js for storing data
-
-#### 0.1.1: Created Page Header Component and its components
+v0.1.1: Implemented the Header
 
 ### Setup
 
-#### 0.0.4: Added basic styling
-
-#### 0.0.3: Created base macrostructure
-
-#### 0.0.2: Created Views
-
-#### 0.0.1: Created the scaffolding
-
-## Project setup
+v0.0: Created scaffolding and basic setup for the page
 
 ```shell
 npm install
