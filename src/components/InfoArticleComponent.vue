@@ -49,7 +49,7 @@ export default {
             default: "dark",
         },
 
-        emphasizedText: {
+        emphasisedText: {
             type: String, /* 'onTitle' | 'onContent' */
             default: 'onTitle',
         },
@@ -59,11 +59,11 @@ export default {
 
     computed: {
         titleEmphasis() {
-            return this.emphasizedText === 'onTitle' ? 'emphasizedStyle' : ['defaultStyle', 'font-subtle-caps'];
+            return this.emphasisedText === 'onTitle' ? 'emphasizedStyle' : ['defaultStyle', 'font-subtle-caps'];
         },
 
         contentEmphasis() {
-            return this.emphasizedText === 'onContent' ? 'emphasizedStyle' : 'defaultStyle';
+            return this.emphasisedText === 'onContent' ? 'emphasizedStyle' : 'defaultStyle';
         }
     },
 
@@ -78,11 +78,13 @@ export default {
 
 .emphasizedStyle {
     color: $clr-primary-dark-purple;
-    font-size: $fs-2;
+    font-size: $fs-3;
+    font-weight: $fw-bold;
     font-family: $ff-secondary;
 
     &.big {
         font-size: $fs-1;
+        font-weight: $fw-extra-bold;
     }
 }
 

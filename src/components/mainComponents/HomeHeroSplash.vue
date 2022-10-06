@@ -2,13 +2,13 @@
 	<div class="hero-bg flex">
 		<div class="container">
 			<p class="font-subtle-caps">{{ heroInfo }}</p>
-			
+
 			<InfoArticleComponent 
 				:info="heroText" 
 				:withCTA="true"
 				:CTABtnType="'light'"
 				:emphasisSize="'big'"
-				:emphasizedText="'onTitle'"
+				:emphasisedText="'onTitle'"
 				class="info-card" 
 			/>
 		</div>
