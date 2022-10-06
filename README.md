@@ -36,6 +36,10 @@ For many of the images I will create an assets/images in the public folder follo
 
 ## Versions
 
+### Implementing OurProductsSection
+
+v0.1.2
+
 ### Implmenting Header
 
 v0.1.1: Implemented the Header

@@ -5,7 +5,9 @@
       <HomeHeroSplash />
     </div>
 
-    <OurProductsSection />
+    <OurProductsSection id='our-products'/>
+
+    <Slider_EmplaCarouselComponent />
   </div>
 </template>
 
@@ -13,6 +15,7 @@
 import HomeHeroSplash from '@/components/mainComponents/HomeHeroSplash.vue';
 import PageHeader from '@/components/mainComponents/PageHeader.vue';
 import OurProductsSection from '@/components/sectionComponents/OurProductsSection.vue';
+import Slider_EmplaCarouselComponent from '@/components/Slider_EmplaCarouselComponent.vue';
 
 export default {
   name: "HomeView",
@@ -20,7 +23,8 @@ export default {
   components: {
     HomeHeroSplash,
     PageHeader,
-    OurProductsSection
+    OurProductsSection,
+    Slider_EmplaCarouselComponent
 }
 }
 </script>
