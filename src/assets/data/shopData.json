@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Choco Chip Cookies",
+    "category": ["Cookies", "Pastries"],
+    "priceTagLow": 19,
+    "priceTagHigh": 39  
+  }, 
+  {
+    "name": "Strawberry Jam Cookies",
+    "category": ["Cookies", "Pastries", "Jam"],
+    "priceTagLow": 24,
+    "priceTagHigh": 62   
+  }, 
+  {
+    "name": "Strawberry Doughnut",
+    "category": ["Doughnut", "Jam"],
+    "priceTagLow": 24,
+    "priceTagHigh": 42  
+  }, 
+  {
+    "name": "Perfect Macarons",
+    "category": ["Pastries"],
+    "priceTagLow": 18,
+    "priceTagHigh": 52  
+  }
+]

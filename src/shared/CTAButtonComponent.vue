@@ -10,7 +10,9 @@ export default {
         buttonLink: Object,
         buttonType: String, /* 'light' | 'dark' */
     },
-    components: { RoutingNavLinkComponent }
+    components: { 
+      RoutingNavLinkComponent 
+    }
 }
 </script>
 
