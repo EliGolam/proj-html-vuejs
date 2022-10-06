@@ -47,7 +47,6 @@ export default {
 	setup() {
 		const [emblaNode, emblaApi] = emblaCarouselVue({ 
 			loop: true, 
-			skipSnaps: true,
 		})
 		return { emblaNode, emblaApi }
 	},
