@@ -45,7 +45,10 @@ export default {
 	},
 
 	setup() {
-		const [emblaNode, emblaApi] = emblaCarouselVue({ loop: true })
+		const [emblaNode, emblaApi] = emblaCarouselVue({ 
+			loop: true, 
+			skipSnaps: true,
+		})
 		return { emblaNode, emblaApi }
 	},
 
@@ -75,7 +78,8 @@ export default {
 .embla__slide {
 	flex: 0 0 30%;
 	max-width: 100%;
-	height: fit-content;
+
+	margin-right: $_size-3;
 }
 
 // Slider Navigation Buttons

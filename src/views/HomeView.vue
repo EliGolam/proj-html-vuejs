@@ -32,7 +32,8 @@ export default {
   position: relative;
 
   .header {
-    position: fixed;
+    position: absolute;
+      top: 0;
   }
 }
 </style>
