@@ -13,7 +13,7 @@
         </p>
 
 		<CTAButtonComponent v-if="withCTA"
-			:buttonText="info.cta"
+			:buttonLink="buttonLink"
 			:buttonType="CTABtnType"
             class="cta-btn"
 		/>
@@ -31,6 +31,7 @@ export default {
             title: String,
             content: String,
             cta: String (optional),
+            ctaPath: String (optional),
         } */
 				
         // Optional Props
@@ -64,6 +65,13 @@ export default {
 
         contentEmphasis() {
             return this.emphasisedText === 'onContent' ? 'emphasizedStyle' : 'defaultStyle';
+        },
+
+        buttonLink() {
+            return {
+                name: this.info.cta,
+                path: this.info.ctaPath,
+            } 
         }
     },
 

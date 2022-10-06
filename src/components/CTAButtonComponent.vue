@@ -1,21 +1,23 @@
 <template>
-	<button type="button" :class="buttonType">{{ buttonText }}</button>
+	<RoutingNavLinkComponent :link="buttonLink" class="button" />
 </template>
 
 <script>
+import RoutingNavLinkComponent from './RoutingNavLinkComponent.vue';
 export default {
-	name: 'CTAButtonComponent',
-	props: {
-		buttonText: String,
-		buttonType: String, /* 'light' | 'dark' */
-	}, 
+    name: "CTAButtonComponent",
+    props: {
+        buttonLink: Object,
+        buttonType: String, /* 'light' | 'dark' */
+    },
+    components: { RoutingNavLinkComponent }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-button {
+.button {
 	// Variables
 	$padding-x: $_size-4;
 	$padding-y: $_size-1;
