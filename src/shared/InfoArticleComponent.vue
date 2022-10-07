@@ -1,7 +1,7 @@
 <template>
 	<article>
 		<component 
-      :is="heading" 
+      :is="titleTag" 
       :class="[titleEmphasis, emphasisSize]"
       >
       {{ info.title }}
@@ -35,7 +35,7 @@ export default {
         } */
 				
         // Optional Props
-        heading: { // Title Tag invece di heading
+        titleTag: { // Title Tag invece di heading
             type: String,
             default: "h2",
         },

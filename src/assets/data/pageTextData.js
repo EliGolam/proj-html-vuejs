@@ -9,13 +9,13 @@ class InfoCard {
 }
 
 // Import String Data
-import {heroArticle, ourProductsArticle } from '@/assets/data/infoArticleData.json'
-import { heroInfo } from '@/assets/data/otherTextData.json'
+import infoArticleData from '@/assets/data/infoArticleData.json'
+import otherTextData from '@/assets/data/otherTextData.json'
 
 
 
 export const PAGE_TEXT_DATA = {
-    heroText: new InfoCard (...heroArticle),
-    heroInfo: heroInfo,
-    ourProductsText: new InfoCard (...ourProductsArticle),
+    heroText: new InfoCard (...infoArticleData.heroArticle),
+    heroInfo: otherTextData.heroInfo,
+    ourProductsText: new InfoCard (...infoArticleData.ourProductsArticle),
 }

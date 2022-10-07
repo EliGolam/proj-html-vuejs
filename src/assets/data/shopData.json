@@ -1,26 +1,30 @@
 [
   {
     "name": "Choco Chip Cookies",
-    "category": ["Cookies", "Pastries"],
+    "categories": ["Cookies", "Pastries"],
     "priceTagLow": 19,
-    "priceTagHigh": 39  
+    "priceTagHigh": 39,
+    "imgName": "choco-chip-cookies"   
   }, 
   {
     "name": "Strawberry Jam Cookies",
-    "category": ["Cookies", "Pastries", "Jam"],
+    "categories": ["Cookies", "Pastries", "Jam"],
     "priceTagLow": 24,
-    "priceTagHigh": 62   
+    "priceTagHigh": 62,
+    "imgName": "strawberry-jam-cookies"    
   }, 
   {
     "name": "Strawberry Doughnut",
-    "category": ["Doughnut", "Jam"],
+    "categories": ["Doughnut", "Jam"],
     "priceTagLow": 24,
-    "priceTagHigh": 42  
+    "priceTagHigh": 42,
+    "imgName": "strawberry-donut"   
   }, 
   {
     "name": "Perfect Macarons",
-    "category": ["Pastries"],
+    "categories": ["Pastries"],
     "priceTagLow": 18,
-    "priceTagHigh": 52  
+    "priceTagHigh": 52,
+    "imgName": "perfect-macarons"   
   }
 ]

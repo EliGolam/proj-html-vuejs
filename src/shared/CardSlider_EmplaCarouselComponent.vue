@@ -1,15 +1,12 @@
 <template>
   <div class="embla" ref="emblaNode">
 
-    <div class="embla__container">
-      <div class="embla__slide"><img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-      <div class="embla__slide"><img src="https://images.pexels.com/photos/1535288/pexels-photo-1535288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-      <div class="embla__slide"><img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-			<div class="embla__slide"><img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-			<div class="embla__slide"><img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-      <div class="embla__slide"><img src="https://images.pexels.com/photos/1535288/pexels-photo-1535288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-      <div class="embla__slide"><img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-			<div class="embla__slide"><img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+    <div class="embla__container" :class="cardContainerClass">
+      <div class="embla__slide" v-for="card in cardsCollection" :key="card.name" >
+        <DisplayCardComponent v-if="typeOfCards === 'display'"
+          :cardInfo="card" 
+          />
+      </div>
     </div>
 
 
@@ -31,36 +28,43 @@
 
 <script>
 import emblaCarouselVue from 'embla-carousel-vue'
+import DisplayCardComponent from './DisplayCardComponent.vue';
 
 export default {
-	name: 'CardSlider',
+    name: "CardSlider",
+    props: {
+      cardsCollection: Array,
+      typeOfCards: {
+          type: String,
+          default: "default",
+      }
+    },
+    setup() {
+      const [emblaNode, emblaApi] = emblaCarouselVue({
+          loop: true,
+      });
+      return { emblaNode, emblaApi };
+    },
+    methods: {
+      nextSlide() {
+          console.log("Test Scroll");
+          this.emblaApi.scrollNext();
+      },
+      prevSlide() {
+          console.log("Test Scroll");
+          this.emblaApi.scrollPrev();
+      },
+    },
 
-	props: {
-		cardsCollection: Array,
+    computed: {
+      cardContainerClass() {
+        return [this.typeOfCards];
+      }
+    },
 
-		typeOfCard: {
-			type: String, /* 'large' | 'default' */
-			default: 'default',
-		}
-	},
-
-	setup() {
-		const [emblaNode, emblaApi] = emblaCarouselVue({ 
-			loop: true, 
-		})
-		return { emblaNode, emblaApi }
-	},
-
-	methods: {
-		nextSlide() {
-			console.log("Test Scroll");
-			this.emblaApi.scrollNext();
-		},
-		prevSlide() {
-			console.log("Test Scroll");
-			this.emblaApi.scrollPrev();
-		},
-	}
+    components: { 
+      DisplayCardComponent 
+    }
 }
 </script>
 
@@ -73,13 +77,17 @@ export default {
 }
 .embla__container {
 	display: flex;
-}
-.embla__slide {
-	flex: 0 0 30%;
-	max-width: 100%;
 
-	margin-right: $_size-3;
+  &.display {
+    .embla__slide {
+      flex: 0 0 50%;
+      max-width: 100%;
+    
+      margin-right: $_size-3;
+    }
+  }
 }
+
 
 // Slider Navigation Buttons
 .slider-nav-btn {
@@ -115,11 +123,4 @@ export default {
 	}
 		
 }
-
-// DEBUG
-img {
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-}
-
 </style>
