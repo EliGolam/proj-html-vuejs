@@ -2,23 +2,20 @@
 	<section class="container flex">
 		<InfoArticleComponent 
 			:info="ourProductsText"
-			:withCTA="true"
 			:CTABtnType="'dark'"
-			:emphasisedText="'onContent'"
 			class="info-card"
 		/>
 
 		<CardSlider 
       :cardsCollection="cards" 
-      :typeOfCards="'display'" 
       class="card-slider"
     />
 	</section>
 </template>
 
 <script>
-import InfoArticleComponent from '@/shared/InfoArticleComponent.vue';
-import CardSlider from '@/shared/CardSlider_EmplaCarouselComponent.vue';
+import InfoArticleComponent from '@/components/shared/InfoArticleComponent.vue';
+import CardSlider from '@/components/shared/CardSlider_EmplaCarouselComponent.vue';
 
 // DATA
 import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData.js';
@@ -26,11 +23,11 @@ import shopData from '@/assets/data/shopData.json';
 
 
 export default {
-	name: "OurProductsSection",
+	name: "ShopPreviewSection",
 
 	data() {
 		return {
-			ourProductsText: PAGE_TEXT_DATA.ourProductsText,
+			ourProductsText: PAGE_TEXT_DATA.shopPreviewText,
       cards: shopData,
 		}
 	},
@@ -47,6 +44,8 @@ export default {
 
 section {
   margin: $_size-8 auto;
+
+  text-align: center;
 
   // Flex Container
   gap: $_size-8;

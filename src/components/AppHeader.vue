@@ -15,7 +15,7 @@
 <script>
 import MyAccountComponent from '@/components/MyAccountComponent.vue';
 import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
-import NavBarComponent from '@/shared/NavBarComponent.vue';
+import NavBarComponent from '@/components/shared/NavBarComponent.vue';
 
 // Import Data
 import { NAV_LINKS } from '@/assets/data/navLinksData'
