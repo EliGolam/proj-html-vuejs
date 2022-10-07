@@ -45,10 +45,18 @@
 
 <style lang="scss" scoped>
 article {
+  cursor: pointer;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   
 
   img {
     opacity: 1;
+    min-height: 100%;
+    object-fit: cover;
 
     transition: opacity 300ms ease;
 
