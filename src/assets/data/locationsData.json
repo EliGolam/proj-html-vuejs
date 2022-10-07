@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "title": "New York",
+      "number": "1.800.458.556",
+      "openingHours": "9:00 AM",
+      "closingHours": "6.00 PM",
+      "mapLocation": "#"
+    },
+    {
+      "title": "London",
+      "number": "1.800.458.556",
+      "openingHours": "9:00 AM",
+      "closingHours": "6.00 PM",
+      "mapLocation": "#"
+    }
+  ]
+}

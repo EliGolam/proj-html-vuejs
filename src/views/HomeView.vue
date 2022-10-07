@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <OurProductsSection id='our-products'/>
+    <OurProductsSection id='our-products' />
     
     <CorporateWeddingsSection id="corporate-weddings" />
 
-    <ShopPreviewSection />
+    <ShopPreviewSection class="section" />
 
-    <WorkFlowSection /> 
+    <WorkFlowSection class="section" /> 
+
+    <LocationsSection class="section" />
   </div>
 </template>
 
@@ -16,6 +18,7 @@ import OurProductsSection from '@/components/macrosections/OurProductsSection.vu
 import CorporateWeddingsSection from '../components/macrosections/CorporateWeddingsSection.vue';
 import ShopPreviewSection from '@/components/macrosections/ShopPreviewSection.vue';
 import WorkFlowSection from '@/components/macrosections/WorkFlowSection.vue';
+import LocationsSection from '@/components/macrosections/LocationsSection.vue';
 
 export default {
   name: "HomeView",
@@ -24,7 +27,8 @@ export default {
     OurProductsSection,
     CorporateWeddingsSection,
     ShopPreviewSection,
-    WorkFlowSection
+    WorkFlowSection,
+    LocationsSection
 }
 }
 </script>
