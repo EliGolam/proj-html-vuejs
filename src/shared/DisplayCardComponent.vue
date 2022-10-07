@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" :class="cardShape">
     <img :src="cardImgSrc" :alt="cardInfo.name">
   </div>
 </template>
@@ -17,6 +17,10 @@ export default {
         priceTagHigh: Number, 
         imgName: String}
     */
+    cardShape: {
+      type: String,
+      default: 'display', /* 'display' | 'square' */
+    }
   },
 
   data() {
@@ -39,7 +43,14 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  aspect-ratio: 1 / 1.25;
+  &.display {
+    aspect-ratio: 1 / 1.25;
+  }
+
+  &.square {
+    aspect-ratio: 1 / 1;
+  }
+  
   overflow: hidden;
   position: relative;
 

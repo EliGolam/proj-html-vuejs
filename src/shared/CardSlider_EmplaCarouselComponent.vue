@@ -5,7 +5,11 @@
       <div class="embla__slide" v-for="card in cardsCollection" :key="card.name" >
         <DisplayCardComponent v-if="typeOfCards === 'display'"
           :cardInfo="card" 
-          />
+        />
+        <DisplayCardComponent v-else
+          :cardInfo="card"
+          :cardShape="'square'" 
+        />
       </div>
     </div>
 
@@ -77,6 +81,15 @@ export default {
 }
 .embla__container {
 	display: flex;
+
+  &.default {
+    .embla__slide {
+      flex: 0 0 30%;
+      max-width: 100%;
+    
+      margin-right: $_size-3;
+    }
+  }
 
   &.display {
     .embla__slide {

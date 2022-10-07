@@ -18,4 +18,5 @@ export const PAGE_TEXT_DATA = {
     heroText: new InfoCard (...infoArticleData.heroArticle),
     heroInfo: otherTextData.heroInfo,
     ourProductsText: new InfoCard (...infoArticleData.ourProductsArticle),
+    shopPreviewText: new InfoCard (...infoArticleData.shopPreviewArticle)
 }

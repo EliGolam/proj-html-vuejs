@@ -26,5 +26,33 @@
     "priceTagLow": 18,
     "priceTagHigh": 52,
     "imgName": "perfect-macarons"   
+  },
+  {
+    "name": "Blackberry Stuffed Bread",
+    "categories": ["Bread"],
+    "priceTagLow": 10,
+    "priceTagHigh": 30,
+    "imgName": "blackberry-stuffed-bread"   
+  },
+  {
+    "name": "Cherry Cake",
+    "categories": ["Pastries", "Cake"],
+    "priceTagLow": 15,
+    "priceTagHigh": 40,
+    "imgName": "cherry-cake-800x1020"   
+  },
+  {
+    "name": "Cookies with Ice Cream",
+    "categories": ["Pastries", "Cookies"],
+    "priceTagLow": 20,
+    "priceTagHigh": 52,
+    "imgName": "cookies-with-ice-cream"   
+  },
+  {
+    "name": "Glazed Pancake with Lemon",
+    "categories": ["Pastries"],
+    "priceTagLow": 15,
+    "priceTagHigh": 30,
+    "imgName": "glazed-pancake-with-lemon"   
   }
 ]

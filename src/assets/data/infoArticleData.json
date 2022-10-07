@@ -10,5 +10,11 @@
     "All our delectable pastries are baked fresh in our kitchen every morning, and are made with all natural, all organic ingredients.",
     "Start Shopping",
     "/shop"
+  ],
+  "shopPreviewArticle": [
+    "Find a freshly backed product perfect for you",
+    "Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Nunc non blandit massa enim nec dui nunc mattis enim.",
+    "Shop All Products",
+    "/shop"
   ]
 }

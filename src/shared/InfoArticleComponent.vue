@@ -42,7 +42,7 @@ export default {
 
         withCTA: {
             type: Boolean,
-            default: false,
+            default: true,
         },
 
         CTABtnType: {

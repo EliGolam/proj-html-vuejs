@@ -2,15 +2,12 @@
 	<section class="container flex">
 		<InfoArticleComponent 
 			:info="ourProductsText"
-			:withCTA="true"
 			:CTABtnType="'dark'"
-			:emphasisedText="'onContent'"
 			class="info-card"
 		/>
 
 		<CardSlider 
       :cardsCollection="cards" 
-      :typeOfCards="'display'" 
       class="card-slider"
     />
 	</section>
@@ -30,7 +27,7 @@ export default {
 
 	data() {
 		return {
-			ourProductsText: PAGE_TEXT_DATA.ourProductsText,
+			ourProductsText: PAGE_TEXT_DATA.shopPreviewText,
       cards: shopData,
 		}
 	},
@@ -47,6 +44,8 @@ export default {
 
 section {
   margin: $_size-8 auto;
+
+  text-align: center;
 
   // Flex Container
   gap: $_size-8;
