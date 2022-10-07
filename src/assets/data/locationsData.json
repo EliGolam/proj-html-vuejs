@@ -2,6 +2,7 @@
   "cards": [
     {
       "title": "New York",
+      "img": "img/new-york-bk.jpg",
       "number": "1.800.458.556",
       "openingHours": "9:00 AM",
       "closingHours": "6.00 PM",
@@ -9,6 +10,7 @@
     },
     {
       "title": "London",
+      "img": "img/london-bk.jpg",
       "number": "1.800.458.556",
       "openingHours": "9:00 AM",
       "closingHours": "6.00 PM",

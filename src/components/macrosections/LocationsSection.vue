@@ -1,18 +1,45 @@
 <template>
-  <section>
+  <section class="container">
     <h2 class="font-subtle-caps">Locations</h2>
     <p class="font-emphasized">Visit our Bakeries</p>
+
+    <div class="card-container flex">
+      <LocationCardComponent v-for="card in cards" :key="card.title"
+        :cardInfo="card" 
+        class="card"
+      />
+    </div>
   </section>
 </template>
 
 <script>
-  export default {
-    
-  }
+import locationsData from '@/assets/data/locationsData.json'
+import LocationCardComponent from './LocationCardComponent.vue';
+
+export default {
+    data() {
+        return {
+            cards: locationsData.cards,
+        };
+    },
+    components: { LocationCardComponent }
+}
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
 section  {
   text-align: center;
+
+  .card {
+
+    &:first-child {
+      background-color: rgba($clr-md-atoll, .3);
+    }
+    &:nth-child(2) {
+      background-color: rgba($clr-cube-chalky, .5);
+    }
+  }
 }
 </style>
