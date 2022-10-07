@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Corporate Events",
+    "info": "International Bakery",
+    "cta" : "Explore More",
+    "ctaPath": "/contact",
+    "bgImg": "corporate-bg",
+    "bgImgHover": "corporate-hover-bg"
+  }, 
+  {
+    "name": "Weddings & Parties",
+    "info": "Private Dining Hall",
+    "cta" : "Explore More",
+    "ctaPath": "/contact",
+    "bgImg": "wedding-bg",
+    "bgImgHover": "wedding-hover-bg"
+  }
+]

@@ -45,8 +45,6 @@ export default {
 
   img {
     object-fit: cover;
-
-    
   }
 }
 </style>

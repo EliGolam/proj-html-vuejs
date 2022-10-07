@@ -10,12 +10,12 @@
 		<p 
       :class="[contentEmphasis, emphasisSize]"
       >{{ info.content }}
-  </p>
+    </p>
 
 		<CTAButtonComponent v-if="withCTA"
 			:buttonLink="buttonLink"
 			:buttonType="CTABtnType"
-            class="cta-btn"
+      class="cta-btn"
 		/>
 	</article>
 </template>
@@ -60,11 +60,11 @@ export default {
 
     computed: {
         titleEmphasis() {
-            return this.emphasisedText === 'onTitle' ? 'emphasizedStyle' : ['defaultStyle', 'font-subtle-caps'];
+            return this.emphasisedText === 'onTitle' ? 'font-emphasized' : ['defaultStyle', 'font-subtle-caps'];
         },
 
         contentEmphasis() {
-            return this.emphasisedText === 'onContent' ? 'emphasizedStyle' : 'defaultStyle';
+            return this.emphasisedText === 'onContent' ? 'font-emphasized' : 'defaultStyle';
         },
 
         buttonLink() {
@@ -84,23 +84,11 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-.emphasizedStyle {
-    color: $clr-primary-dark-purple;
-    font-size: $fs-3;
-    font-weight: $fw-bold;
-    font-family: $ff-secondary;
-
-    &.big {
-        font-size: $fs-1;
-        font-weight: $fw-extra-bold;
-    }
-}
-
 .defaultStyle {
     color: $clr-dark;
 }
 
-.cta-btn {
+p {
     margin: $_size-4 0;
 }
 </style>
