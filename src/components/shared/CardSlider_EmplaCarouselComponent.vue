@@ -88,6 +88,10 @@ export default {
       max-width: 100%;
     
       margin-right: $_size-3;
+
+      @media only screen and (min-width: $md-breakpoint) {
+        flex: 0 0 50%;
+      }
     }
   }
 

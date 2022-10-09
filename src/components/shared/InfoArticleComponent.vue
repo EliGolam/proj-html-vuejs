@@ -7,7 +7,7 @@
       {{ info.title }}
     </component>
 
-		<p 
+		<p class="info"
       :class="[contentEmphasis, emphasisSize]"
       >{{ info.content }}
     </p>
@@ -88,7 +88,7 @@ export default {
     color: $clr-dark;
 }
 
-p {
-    margin: $_size-4 0;
+.info {
+    margin: $_size-5 0;
 }
 </style>

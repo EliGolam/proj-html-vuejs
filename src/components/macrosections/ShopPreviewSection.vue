@@ -49,6 +49,7 @@ section {
 
   // Flex Container
   gap: $_size-8;
+  align-items: center;
 
   .card-slider {
     width: 55%;
