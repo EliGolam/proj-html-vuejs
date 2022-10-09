@@ -1,9 +1,11 @@
 <template>
-	<RoutingNavLinkComponent 
-    :link="buttonLink" 
-    class="btn-default" 
-    :class="buttonType"
-  />
+  <div>
+    <RoutingNavLinkComponent 
+      :link="buttonLink" 
+      class="btn-default" 
+      :class="buttonType"
+    />
+  </div>
 </template>
 
 <script>
@@ -25,5 +27,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
+div {
+  margin-top: $_size-8;
+}
 
 </style>

@@ -18,6 +18,7 @@
 			:buttonType="CTABtnType"
       class="cta-btn"
 		/>
+    
 	</article>
 </template>
 
@@ -56,7 +57,7 @@ export default {
 
         // Choose which tag to put emphasis on
         emphasisedText: {
-            type: String, /* 'onTitle' | 'onContent' */
+            type: String, /* 'onTitle' | 'onContent' | 'none' */
             default: 'onTitle',
         },
 
@@ -66,11 +67,13 @@ export default {
 
     computed: {
         titleEmphasis() {
-            return this.emphasisedText === 'onTitle' ? 'font-emphasized' : ['defaultStyle', 'font-subtle-caps'];
+            if (this.emphasisedText === 'onTitle') return 'font-emphasized';
+            else return ['defaultStyle', 'font-subtle-caps'];
         },
 
         contentEmphasis() {
-            return this.emphasisedText === 'onContent' ? 'font-emphasized' : 'defaultStyle';
+          if (this.emphasisedText === 'onContent') return 'font-emphasized';
+          else return 'defaultStyle';
         },
 
         buttonLink() {

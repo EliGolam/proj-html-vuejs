@@ -18,7 +18,7 @@
 
 // SPACING
 .flow-section > * + * {
-  margin-top: $_size-8;
+  margin-top: $_size-10;
 }
 
 
@@ -69,6 +69,23 @@
     scroll-snap-align: center;
 }
 
+.display-section {
+  // Flex Container
+  gap: $_size-3;
+  flex-direction: column;
+  align-items: center;
+
+  .card-slider {
+    flex-basis: 60%;
+    min-width: 400px;
+    margin-left: auto;
+  }
+
+  @media only screen and (min-width: $md-breakpoint) {
+    flex-direction: row;
+  }
+}
+
 
 // Font
 .ff-default {
@@ -115,7 +132,6 @@
 	padding: $padding-y $padding-x;
 	border-radius: $radius;
 
-  margin-top: .5rem;
 
 	// Transitions
 	transition: 

@@ -1,5 +1,5 @@
 <template>
-	<section class="container flex">
+	<section class="flex display-section">
 		<InfoArticleComponent 
 			:info="ourProductsText"
 			:CTABtnType="'dark'"
@@ -43,17 +43,6 @@ export default {
 @import '@/assets/styles/variables';
 
 section {
-  margin: $_size-8 auto;
-
   text-align: center;
-
-  // Flex Container
-  gap: $_size-8;
-  align-items: center;
-
-  .card-slider {
-    width: 55%;
-    margin-left: auto;
-  }
 }
 </style>

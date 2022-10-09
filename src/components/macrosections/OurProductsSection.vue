@@ -1,5 +1,5 @@
 <template>
-	<section class="flex">
+	<section class="flex display-section">
 
 		<InfoArticleComponent 
 			:info="ourProductsText"
@@ -47,14 +47,4 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-section {
-  // Flex Container
-  gap: $_size-3;
-
-  .card-slider {
-    flex-basis: 60%;
-    min-width: 400px;
-    margin-left: auto;
-  }
-}
 </style>
