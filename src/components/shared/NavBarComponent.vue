@@ -34,12 +34,10 @@ export default {
 	
 nav {
 	// Local Variables
-	$c-gap: $_size-6;
+	$c-gap: $_size-2;
 	
 	// Flex Container
 	display: flex;
 	column-gap: $c-gap;
-
-	
 }
 </style>

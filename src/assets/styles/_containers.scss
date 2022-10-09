@@ -1,0 +1,37 @@
+@import '_mixins.scss';
+
+// SHAPES
+.round-container {
+  @include squareRatio();
+  border-radius: 100%;
+}
+
+.square-container {
+  @include squareRatio();
+}
+
+
+// CONTAINERS
+.container {
+  @include container-config();
+  padding: $_size-6;
+  max-width: $max-w-container;
+} 
+
+.wide-container {
+  @include container-config();
+  padding: $_size-1 $_size-3;
+}
+
+
+
+// Flex
+.flex {
+  display: flex
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

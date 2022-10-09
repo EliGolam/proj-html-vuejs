@@ -3,73 +3,53 @@
 
 // ARIA-ACCESSIBILITY
 .visually-hidden {
-    position: absolute;
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-}
-
-// SHAPES
-.round-container {
-    aspect-ratio: 1 / 1;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-// CONTAINERS
-.container {
-    @include base-container();
-} 
-
-.wide-container {
-    @include container-config();
-    padding: $_size-2 $_size-6
-}
-
-// Flex
-.flex {
-    display: flex
-}
-
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 // NAV
 .nav-link {
-    cursor: pointer;
+  cursor: pointer;
 
-    // Font
-    font-size: $fs-8;
-    text-transform: uppercase;
-    color: $clr-primary-dark-purple;
+  // Font
+  font-size: $fs-8;
+  
+  text-transform: uppercase;
+  color: $clr-primary-dark-purple;
 
-    padding: $_size-4 0;
-    border-bottom: 2px solid transparent;
+  padding: $_size-4 0;
+  border-bottom: 2px solid transparent;
 
-    // Transitions
-    transition: border-bottom 200ms ease;
+  // Transitions
+  transition: 
+    border-bottom 200ms ease,
+    color 250ms ease-in,
+    transform 300ms ease-in;
 
 	&.router-link-exact-active {
-        border-color: $clr-primary-dark-purple;
+    font-weight: $fw-medium;
+    border-color: $clr-primary-dark-purple;
 	}
 
-    &:hover {
-        border-color: $clr-primary-purple;
-    }
+  &:hover {
+    color: $clr-primary-purple;
+    border-color: $clr-primary-purple;
+
+    transform: translateY(-5%);
+  }
 }
 
 // Cards
 .info-card {
-    max-width: 40ch;
+  max-width: 40ch;
 }
 
 // SCROLLER 

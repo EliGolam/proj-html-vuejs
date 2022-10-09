@@ -17,7 +17,11 @@ HEADER_LINKS.push(new Link('/locations', 'locations'));
 HEADER_LINKS.push(new Link('/journal', 'journal'));
 HEADER_LINKS.push(new Link('/contact', 'contact'));
 
+const FOOTER_LINKS = [...HEADER_LINKS];
+FOOTER_LINKS.shift();
+
 export const NAV_LINKS = {
     header: HEADER_LINKS,
+    footer: FOOTER_LINKS
 }
 

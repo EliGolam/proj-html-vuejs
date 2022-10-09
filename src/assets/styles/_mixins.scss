@@ -4,8 +4,8 @@
     margin: 0 auto
 }
 
-@mixin base-container {
-    @include container-config();
-    padding: $_size-4 $_size-8;
-    max-width: $max-w-container;
+
+@mixin squareRatio {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }

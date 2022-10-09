@@ -1,7 +1,7 @@
 <template>
 	<header class="wide-container">
 
-		<div class="logo-container"> <img :src="logoSrc" alt="The Bakery"> </div>
+		<LogoComponent />
 
 		<NavBarComponent :navLinks="links" class="nav-bar" />
 
@@ -13,32 +13,28 @@
 </template>
 
 <script>
+// Components
 import MyAccountComponent from '@/components/MyAccountComponent.vue';
 import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
 import NavBarComponent from '@/components/shared/NavBarComponent.vue';
 
 // Import Data
-import { NAV_LINKS } from '@/assets/data/navLinksData'
+import { NAV_LINKS } from '@/assets/data/navLinksData';
+import LogoComponent from './shared/LogoComponent.vue';
 
 
 export default {
 	data() {
 		return {
 			links: NAV_LINKS.header,
-			publicPath: process.env.BASE_URL,
 		}
 	},
-
-	computed: {
-		logoSrc() {
-			return this.publicPath + 'logo.png';
-		}
-	},
-
+  
   components: {
     MyAccountComponent,
     ShoppingCartComponent,
-    NavBarComponent
+    NavBarComponent,
+    LogoComponent
 }
 }
 </script>
@@ -48,9 +44,9 @@ export default {
 
 header {
 	// VARIABLES
-	$logo-size: 150px;
-	$default-padding: $_size-6;
+	$default-padding: $_size-2;
 	
+  // Size
 	width: 100%;
 
 	// Flex Container
@@ -58,10 +54,6 @@ header {
 	align-items: center;
 
 	// Flex Items
-	.logo-container {
-		width: $logo-size;
-	}
-
 	.nav-bar {
 		margin-left: auto; // Align Content to the right
 	}

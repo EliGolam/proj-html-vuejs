@@ -5,6 +5,8 @@
 
     <!-- Router View -->
     <router-view/>
+
+    <AppFooter />
   </div>
 </template>
 
@@ -13,13 +15,15 @@
 <script>
 import AppHeader from '@/components/AppHeader.vue';
 import AppHeaderWithHeroBG from './components/AppHeaderWithHeroBG.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: 'App',
 
   components: {
     AppHeader,
-    AppHeaderWithHeroBG
+    AppHeaderWithHeroBG,
+    AppFooter
 }
 }
 </script>
