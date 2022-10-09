@@ -14,6 +14,6 @@ export default {
 @import '@/assets/styles/variables';
 
 article {
-  background-color: $clr-primary-purple;
+  background-color: rgba($clr-primary-purple, .3);
 }
 </style>

@@ -19,14 +19,14 @@ import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
 import NavBarComponent from '@/components/shared/NavBarComponent.vue';
 
 // Import Data
-import { NAV_LINKS } from '@/assets/data/navLinksData';
+import navLinksData from '@/assets/data/navLinksData.json';
 import LogoComponent from './shared/LogoComponent.vue';
 
 
 export default {
 	data() {
 		return {
-			links: NAV_LINKS.header,
+			links: navLinksData.header,
 		}
 	},
   

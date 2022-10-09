@@ -1,6 +1,12 @@
 <template>
   <div class="card" :class="cardShape">
     <img :src="cardImgSrc" :alt="cardInfo.name">
+
+    <div class="hover-info flex">
+      <h5 class="font-emphasized">{{ cardInfo.name }}</h5>
+      <p>{{ cardCategories }}</p>
+      <p>{{ cardPrices }}</p>
+    </div>
   </div>
 </template>
 
@@ -36,13 +42,28 @@ export default {
       const { imgName } = this.cardInfo;
 
       return this.publicPath + this.directoryPath + imgName + this.imgFormat;
+    },
+
+    cardCategories() {
+      return this.cardInfo.categories.join(', ');
+    },
+
+    cardPrices() {
+      const { priceTagLow, priceTagHigh } = this.cardInfo;
+
+      return `$${priceTagLow} $${priceTagHigh}`;
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
 .card {
+  position: relative;
+  cursor: pointer;
+
   &.display {
     aspect-ratio: 1 / 1.25;
   }
@@ -56,6 +77,29 @@ export default {
 
   img {
     object-fit: cover;
+  }
+
+  .hover-info {
+    position: absolute;
+      top: 0;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba($clr-cube-cod-gray, .3);
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    * {
+      color: $clr-light;
+    }
   }
 }
 </style>

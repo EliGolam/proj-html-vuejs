@@ -1,0 +1,63 @@
+{
+  "header": [
+    {
+      "path": "/",
+      "name": "home"
+    },
+    {
+      "path": "/shop",
+      "name": "shop"
+    },
+    {
+      "path": "/about",
+      "name": "about"
+    },
+    {
+      "path": "/gallery",
+      "name": "gallery"
+    },
+    {
+      "path": "/locations",
+      "name": "locations"
+    },
+    {
+      "path": "/journal",
+      "name": "journal"
+    },
+    {
+      "path": "/contact",
+      "name": "contact"
+    }
+  ],
+
+  "footer": [
+    {
+      "path": "/shop",
+      "name": "shop"
+    },
+    {
+      "path": "/about",
+      "name": "about"
+    },
+    {
+      "path": "/gallery",
+      "name": "gallery"
+    },
+    {
+      "path": "/locations",
+      "name": "locations"
+    },
+    {
+      "path": "/journal",
+      "name": "journal"
+    },
+    {
+      "path": "/contact",
+      "name": "contact"
+    },
+    {
+      "path": "/orders",
+      "name": "orders"
+    }
+  ]
+}
