@@ -1,5 +1,9 @@
 <template>
-	<RoutingNavLinkComponent :link="buttonLink" class="button-link" :class="buttonType"/>
+	<RoutingNavLinkComponent 
+    :link="buttonLink" 
+    class="btn-default" 
+    :class="buttonType"
+  />
 </template>
 
 <script>
@@ -8,7 +12,11 @@ export default {
     name: "CTAButtonComponent",
     props: {
         buttonLink: Object,
-        buttonType: String, /* 'light' | 'dark' */
+
+        buttonType: { /* 'light' | 'dark' */
+          type: String,
+          default: 'dark',
+        } 
     },
     components: { 
       RoutingNavLinkComponent 

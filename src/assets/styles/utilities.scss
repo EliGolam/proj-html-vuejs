@@ -89,7 +89,7 @@
   }
 }
 
-.button-link {
+.btn-default {
 	// Variables
 	$padding-x: $_size-4;
 	$padding-y: $_size-1;
@@ -109,8 +109,8 @@
 
 	// Transitions
 	transition: 
-		color $_speed-3 ease,
-		background-color $_speed-2 ease;
+		color $_speed-2 ease,
+		background-color $_speed-3 ease;
 
 
 	// BTN Colours	

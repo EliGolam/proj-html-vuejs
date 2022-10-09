@@ -1,5 +1,6 @@
 <template>
 	<article>
+
 		<component 
       :is="titleTag" 
       :class="[titleEmphasis, emphasisSize]"
@@ -34,27 +35,32 @@ export default {
             ctaPath: String (optional),
         } */
 				
-        // Optional Props
-        titleTag: { // Title Tag invece di heading
+        /* Optional Props */
+        // Assign a custom HTML tag for title
+        titleTag: { 
             type: String,
             default: "h2",
         },
 
+        // Remove CTA if not wanted
         withCTA: {
             type: Boolean,
             default: true,
         },
 
+        // CTA button style
         CTABtnType: {
             type: String,
             default: "dark",
         },
 
+        // Choose which tag to put emphasis on
         emphasisedText: {
             type: String, /* 'onTitle' | 'onContent' */
             default: 'onTitle',
         },
 
+        // Add a "bigger" emphasised text if needed
         emphasisSize: String, /* 'big' */
     },
 
