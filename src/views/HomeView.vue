@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div class="home flow-section container">
+    
     <OurProductsSection id='our-products' />
     
     <CorporateWeddingsSection id="corporate-weddings" />
@@ -35,5 +36,10 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
 
+.home {
+  margin-top: $_size-8; 
+  margin-bottom: $_size-8;
+}
 </style>

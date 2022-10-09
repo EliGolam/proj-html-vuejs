@@ -1,5 +1,6 @@
 <template>
-	<section class="container flex">
+	<section class="flex">
+
 		<InfoArticleComponent 
 			:info="ourProductsText"
 			:withCTA="true"
@@ -13,6 +14,7 @@
       :typeOfCards="'display'" 
       class="card-slider"
     />
+
 	</section>
 </template>
 
@@ -46,13 +48,12 @@ export default {
 @import '@/assets/styles/variables';
 
 section {
-  margin: $_size-8 auto;
-
   // Flex Container
-  gap: $_size-8;
+  gap: $_size-3;
 
   .card-slider {
-    width: 55%;
+    flex-basis: 60%;
+    min-width: 400px;
     margin-left: auto;
   }
 }

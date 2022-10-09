@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
     <h2 class="title font-subtle-caps">Corporate &amp; Weddings</h2>
     <p class="font-emphasized">Baking Special Moments</p>
 

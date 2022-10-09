@@ -1,5 +1,5 @@
 <template>
-  <article :style="hoverImg">
+  <article :style="hoverBgImg">
     <img :src="imgSrc" :alt="cardInfo.name">
   </article>
 </template>
@@ -34,7 +34,7 @@
         return this.publicPath + this.directoryPath + bgImg + this.imgFormat;
       },
       
-      hoverImg() {
+      hoverBgImg() {
         const { bgImgHover } = this.cardInfo;
         const bgImgPath = this.publicPath + this.directoryPath + bgImgHover + this.imgFormat;
         return `background-image: url(${bgImgPath});`
@@ -60,7 +60,7 @@ article {
     min-height: 100%;
     object-fit: cover;
 
-    transition: opacity $_speed-3 ease;
+    transition: opacity $_speed-4 ease;
 
     &:hover {
       opacity: 0;

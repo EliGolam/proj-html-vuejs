@@ -91,10 +91,10 @@ export default {
 @import '@/assets/styles/variables';
 
 .defaultStyle {
-    color: $clr-dark;
+  color: $clr-dark;
 }
 
 .info {
-    margin: $_size-5 0;
+  margin: $_size-5 0;
 }
 </style>

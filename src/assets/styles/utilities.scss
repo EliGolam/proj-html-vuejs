@@ -15,6 +15,13 @@
   border: 0 !important;
 }
 
+
+// SPACING
+.flow-section > * + * {
+  margin-top: $_size-8;
+}
+
+
 // NAV
 .nav-link {
   cursor: pointer;
@@ -49,8 +56,9 @@
 
 // Cards
 .info-card {
-  max-width: 40ch;
+  max-width: 50ch;
 }
+
 
 // SCROLLER 
 .scroll-snap {
@@ -60,6 +68,7 @@
 .scroll-snap > * {
     scroll-snap-align: center;
 }
+
 
 // Font
 .ff-default {
@@ -79,9 +88,10 @@
 
 .font-emphasized {
   color: $clr-primary-dark-purple;
-  font-size: $fs-3;
+  font-size: $fs-2;
   font-weight: $fw-bold;
   font-family: $ff-secondary;
+  line-height: 1.2;
 
   &.big {
       font-size: $fs-1;
@@ -91,14 +101,14 @@
 
 .btn-default {
 	// Variables
-	$padding-x: $_size-4;
+	$padding-x: $_size-5;
 	$padding-y: $_size-1;
 	$radius: .5em;
 	$dark: $clr-primary-dark-purple;
 	$light: $clr-light;
 
 	// Font
-	font-size: $fs-8;
+	font-size: $fs-7;
 	font-weight: $fw-bold;
 
 	// Shape
@@ -109,7 +119,7 @@
 
 	// Transitions
 	transition: 
-		color $_speed-2 ease,
+		color $_speed-3 ease,
 		background-color $_speed-3 ease;
 
 
