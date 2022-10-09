@@ -10,6 +10,8 @@
     <WorkFlowSection class="section" /> 
 
     <LocationsSection class="section" />
+
+    <SocialSection />
   </div>
 </template>
 
@@ -20,6 +22,7 @@ import CorporateWeddingsSection from '../components/macrosections/CorporateWeddi
 import ShopPreviewSection from '@/components/macrosections/ShopPreviewSection.vue';
 import WorkFlowSection from '@/components/macrosections/WorkFlowSection.vue';
 import LocationsSection from '@/components/macrosections/LocationsSection.vue';
+import SocialSection from '@/components/macrosections/SocialSection.vue';
 
 export default {
   name: "HomeView",
@@ -29,7 +32,8 @@ export default {
     CorporateWeddingsSection,
     ShopPreviewSection,
     WorkFlowSection,
-    LocationsSection
+    LocationsSection,
+    SocialSection
 }
 }
 </script>

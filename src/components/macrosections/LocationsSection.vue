@@ -14,7 +14,7 @@
 
 <script>
 import locationsData from '@/assets/data/locationsData.json'
-import LocationCardComponent from './LocationCardComponent.vue';
+import LocationCardComponent from '@/components/LocationCardComponent.vue';
 
 export default {
     data() {
