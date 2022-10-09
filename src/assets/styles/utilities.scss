@@ -30,9 +30,9 @@
 
   // Transitions
   transition: 
-    border-bottom 200ms ease,
-    color 250ms ease-in,
-    transform 300ms ease-in;
+    border-bottom $_speed-1 ease,
+    color $_speed-2 ease-in,
+    transform $_speed-3 ease-in;
 
 	&.router-link-exact-active {
     font-weight: $fw-medium;
@@ -109,8 +109,8 @@
 
 	// Transitions
 	transition: 
-		color 300ms ease,
-		background-color 250ms ease;
+		color $_speed-3 ease,
+		background-color $_speed-2 ease;
 
 
 	// BTN Colours	

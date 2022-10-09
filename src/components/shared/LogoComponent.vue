@@ -22,9 +22,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables';
 $logo-size: 150px;
 .logo-container {
+  cursor: pointer;
   width: $logo-size;
+
+  
+
+  // Logo image
+  img {
+    &:hover {
+      transform: scale(1.05);
+      opacity: .7
+    }
+  }
 }
 </style>

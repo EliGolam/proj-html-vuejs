@@ -44,6 +44,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
+
 article {
   cursor: pointer;
 
@@ -58,7 +60,7 @@ article {
     min-height: 100%;
     object-fit: cover;
 
-    transition: opacity 300ms ease;
+    transition: opacity $_speed-3 ease;
 
     &:hover {
       opacity: 0;

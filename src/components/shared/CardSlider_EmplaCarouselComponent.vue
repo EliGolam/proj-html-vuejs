@@ -118,7 +118,7 @@ export default {
 	opacity: .65;
 
 	// Transitions
-	transition: opacity 200ms ease;
+	transition: opacity $_speed-1 ease;
 
 	&:hover {
 		opacity: 1;
