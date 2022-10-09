@@ -1,17 +1,19 @@
 <template>
-  <div class="home flow-section container">
+  <div class="home flow-section">
     
-    <OurProductsSection id='our-products' />
+    <OurProductsSection id='our-products' class="container" />
     
-    <CorporateWeddingsSection id="corporate-weddings" />
+    <CorporateWeddingsSection id="corporate-weddings" class="container" />
 
-    <ShopPreviewSection class="section" />
+    <ShopPreviewSection class="container" />
 
-    <WorkFlowSection class="section" /> 
+    <WorkFlowSection class="container" /> 
 
-    <LocationsSection class="section" />
+    <LocationsSection class="container" />
 
-    <SocialSection />
+    <SocialSection class="container" />
+
+    <CTASection class="container" />
   </div>
 </template>
 
@@ -23,6 +25,7 @@ import ShopPreviewSection from '@/components/macrosections/ShopPreviewSection.vu
 import WorkFlowSection from '@/components/macrosections/WorkFlowSection.vue';
 import LocationsSection from '@/components/macrosections/LocationsSection.vue';
 import SocialSection from '@/components/macrosections/SocialSection.vue';
+import CTASection from '../components/macrosections/CTASection.vue';
 
 export default {
   name: "HomeView",
@@ -33,7 +36,8 @@ export default {
     ShopPreviewSection,
     WorkFlowSection,
     LocationsSection,
-    SocialSection
+    SocialSection,
+    CTASection
 }
 }
 </script>
