@@ -11,7 +11,7 @@
 <script>
 import RoutingNavLinkComponent from './RoutingNavLinkComponent.vue';
 export default {
-    name: "CTAButtonComponent",
+    name: "CTARouterButtonComponent",
     props: {
         buttonLink: Object,
 

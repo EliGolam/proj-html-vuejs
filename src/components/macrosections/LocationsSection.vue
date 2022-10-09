@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
     <h2 class="font-subtle-caps">Locations</h2>
     <p class="font-emphasized">Visit our Bakeries</p>
 

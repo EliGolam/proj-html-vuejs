@@ -1,5 +1,5 @@
 {
-  "header": [
+  "headerLinks": [
     {
       "path": "/",
       "name": "home"
@@ -30,7 +30,7 @@
     }
   ],
 
-  "footer": [
+  "footerLinks": [
     {
       "path": "/shop",
       "name": "shop"

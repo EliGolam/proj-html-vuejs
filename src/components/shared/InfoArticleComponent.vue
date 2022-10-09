@@ -13,7 +13,7 @@
       >{{ info.content }}
     </p>
 
-		<CTAButtonComponent v-if="withCTA"
+		<CTARouterButtonComponent v-if="withCTA"
 			:buttonLink="buttonLink"
 			:buttonType="CTABtnType"
       class="cta-btn"
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import CTAButtonComponent from './CTAButtonComponent.vue';
+import CTARouterButtonComponent from './CTARouterButtonComponent.vue';
 
 export default {
     name: "InfoArticleComponent",
@@ -85,7 +85,7 @@ export default {
     },
 
     components: { 
-        CTAButtonComponent 
+        CTARouterButtonComponent 
     }
 }
 </script>
