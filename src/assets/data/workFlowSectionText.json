@@ -2,18 +2,21 @@
   {
     "id": 1,
     "title": "Tell us what you have in mind",
+    "subtitle": "Manual ingredients selection",
     "content": "Diam maecenas ultricies mi eget. Mattis nunc sed blandit libero volutpat. Purus sit amet luctus venenatis lectus. Semper quis lectus nulla at volutpat diam. Ullamcorper malesuada proin libero nunc consequat interdum.",
     "bgImgUrl": "img/bakery-process-1.jpg"
   },
   {
     "id": 2,
     "title": "We Start Baking",
+    "subtitle": "Sweet and delicious",
     "content": "Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Adipiscing at in tellus integer. Eget dolor morbi non arcu. Rhoncus est pellentesque elit ullamcorper dignissim. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Auctor augue mauris augue neque gravida in fermentum et.",
     "bgImgUrl": "img/bakery-process-2.jpg"
   },
   {
     "id": 3,
     "title": "Delivered to your home",
+    "subtitle": "Baked to order & Gift wrapped",
     "content": "Consectetur libero id faucibus nisl tincidunt eget. Hac habitasse platea dictumst quisque sagittis. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. In fermentum posuere urna nec tincidunt. Urna condimentum mattis pellentesque id nibh. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
     "bgImgUrl": "img/bakery-process-3.jpg"
   }

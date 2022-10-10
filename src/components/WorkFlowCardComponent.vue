@@ -1,12 +1,15 @@
 <template>
   <article :style="bgImg">
-    <div class="flex">
+    <div class="flex head">
       <h3 class="font-emphasized text-light">{{ card.title }}</h3>
-      <p class="process-flow">{{ processId }}</p>
+      <p class="process-number">{{ processId }}</p>
     </div>
 
-    <div class="flex content">
-      <p>{{ card.content }}</p>
+    <div class="flex content" :class="`cardID-${card.id}`">
+      <div>
+        <h4 class="font-subtle-caps">{{ card.subtitle }}</h4>
+        <p>{{ card.content }}</p>
+      </div>
     </div>
   </article>
 </template>
@@ -20,6 +23,7 @@
       /* Format {
         id: Number,
         title: String,
+        subtitle: String,
         content: String,
         bgImgUrl: String,
       }*/
@@ -60,17 +64,26 @@ article {
 
   display: flex;
   flex-direction: column;
+
+  .head {
+    align-items: center;
+  }
 }
 
-.process-flow {
+.process-number {
   margin-left: auto;
+  font-size: $fs-1;
+  font-weight: $fw-extra-thin;
 }
 
 .content {
   flex-grow: 1;
-
-  justify-content: end;
   align-items: flex-end;
+
+  &.cardID-1,
+  &.cardID-3 {
+    justify-content: end;
+  }
 
   p {
     max-width: 50ch;
