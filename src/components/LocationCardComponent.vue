@@ -7,7 +7,7 @@
       <div class="flex info-container">
         <LocationsInfoComponent :title="'Call Us'" :info="cardInfo.number" />
         <LocationsInfoComponent :title="'Open All Week'" :info="hours" />
-        <button class="button-link light" type="button">View Map</button>
+        <a class="btn-default light" href="#" type="button">View Map</a>
       </div>
     </article>
   </div>

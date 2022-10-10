@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h4>{{ title }}</h4>
+    <h4 class="font-subtle-caps title">{{ title }}</h4>
     <p>{{ info }}</p>
   </article>
 </template>
@@ -17,5 +17,9 @@
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
 
+.title {
+  margin-bottom: $_size-1;
+}
 </style>

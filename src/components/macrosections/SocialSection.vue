@@ -15,7 +15,7 @@
           :emphasisedText="'onContent'"
         />
 
-        <FollowSocialButton :social="social" />
+        <FollowSocialButtonComponent :social="social" />
       </div>
     </div>
     
@@ -24,7 +24,7 @@
 
 <script>
 import InfoArticleComponent from '../shared/InfoArticleComponent.vue';
-import FollowSocialButton from '../shared/FollowSocialButton.vue';
+import FollowSocialButtonComponent from '../shared/FollowSocialButtonComponent.vue';
 
 import { PAGE_TEXT_DATA } from '@/assets/classes/InfoCardModels';
 
@@ -55,7 +55,7 @@ export default {
     },
     components: { 
       InfoArticleComponent, 
-      FollowSocialButton 
+      FollowSocialButtonComponent 
     }
 }
 </script>

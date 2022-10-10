@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2 class="font-subtle-caps">Locations</h2>
-    <p class="font-emphasized">Visit our Bakeries</p>
+    <p class="font-emphasized subtitle">Visit our Bakeries</p>
 
     <div class="card-container flex">
       <LocationCardComponent v-for="card in cards" :key="card.title"
@@ -32,13 +32,16 @@ export default {
 section  {
   text-align: center;
 
+  .subtitle {
+    margin: $_size-5 auto;
+  }
   .card {
 
     &:first-child {
-      background-color: rgba($clr-md-atoll, .3);
+      background-color: rgba($clr-md-atoll, .05);
     }
     &:nth-child(2) {
-      background-color: rgba($clr-cube-chalky, .5);
+      background-color: rgba($clr-cube-chalky, .2);
     }
   }
 }
