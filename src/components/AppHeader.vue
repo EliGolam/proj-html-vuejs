@@ -1,5 +1,5 @@
 <template>
-	<header class="wide-container flex-center">
+	<header class="wide-container flex-column">
 
 		<LogoComponent />
 
@@ -47,12 +47,14 @@ export default {
 @import '@/assets/styles/variables';
 
 header {
-  // Size
-	width: 100%;
+  
+  
 
-	// Flex Items
-	.nav-bar {
-		margin-left: auto; // Align Content to the right
-	}
+  @media only screen and (min-width: $md-breakpoint) {
+    flex-direction: row;
+    .nav-bar {
+      margin-left: auto; // Align Content to the right
+    }
+  }
 }
 </style>

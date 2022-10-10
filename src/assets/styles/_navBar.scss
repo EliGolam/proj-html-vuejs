@@ -1,18 +1,26 @@
 // NAV
 .nav-bar {
   display: flex;
-  align-items: center;
-  gap: $_size-4;
+  flex-direction: column;
+  
+  @media only screen and (min-width: $md-breakpoint) {
+    align-items: center;
+    flex-direction: row;
+    gap: $_size-4;
+  }
 }
 
 .nav-routing-links {
-	// Local Variables
-	$c-gap: $_size-5;
-	
 	// Flex Container
 	display: flex;
-  align-items: center;
-	column-gap: $c-gap;
+  flex-direction: column;
+	
+
+  @media only screen and (min-width: $md-breakpoint) {
+    align-items: center;
+    flex-direction: row;
+    column-gap: $_size-5;
+  }
 }
 
 
@@ -25,8 +33,13 @@
   color: $clr-primary-dark;
 
   // Shape of container
-  padding: $_size-4 0;
   border-bottom: 2px solid transparent;
+  width: 20%;
+
+  @media only screen and (min-width: $md-breakpoint) {
+    width: 100%;
+    padding: $_size-4 0;
+  }
 
   // Transitions
   transition: 

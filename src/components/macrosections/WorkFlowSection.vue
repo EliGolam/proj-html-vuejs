@@ -47,7 +47,7 @@ $c-gap: $_size-5;
   "card2 info"
   "card3 card3";
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 500px);
 
   column-gap: $c-gap;
