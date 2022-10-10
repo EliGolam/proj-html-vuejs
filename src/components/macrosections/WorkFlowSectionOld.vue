@@ -1,9 +1,9 @@
 <template>
-  <section class="grid">
+  <section class="flex">
     <WorkFlowCardComponent v-for="card in cards" :key="card.id" 
       :card="card"
       class="card"
-      :style="`grid-area: card${card.id}`"
+      :class="{ centerCard : card.id === 2}"
     />
 
     <WorkFlowInfoCardComponent class="card centerCard" />
@@ -38,17 +38,30 @@ export default {
 $r-gap: $_size-6;
 $c-gap: $_size-5;
 
-.grid {
-  display: grid;
-  grid-template-areas: 
-  "card1 card1"
-  "card2 info"
-  "card3 card3";
-
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 700px);
-
-  column-gap: $c-gap;
+section {
+  flex-wrap: wrap;
   row-gap: $r-gap;
+  column-gap: $c-gap;
+}
+
+.card {
+  flex-basis: 100%;
+  aspect-ratio: 21 / 9;
+
+  @media only screen and (min-width: $md-breakpoint) {
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &.centerCard {
+      order: 2;
+      aspect-ratio: 1 / 1;
+      flex-basis: calc(100% / 2 - $c-gap / 2);
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+  }
 }
 </style>
