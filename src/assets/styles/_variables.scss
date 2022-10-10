@@ -30,7 +30,7 @@ $ff-fallback: Helvetica, Arial, sans-serif;
 // Montserrat (Google Font)
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,800&display=swap');
 // Source Serif Pro (Google Font)
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;500;600;700;900&display=swap');
 
 
 // Set Defaults
@@ -51,6 +51,7 @@ $fs-9: .5rem;
 // Weight
 $fw-extra-bold: 800;
 $fw-bold: 700;
+$fw-semi-bold: 600;
 $fw-medium: 500;
 $fw-regular: 400;
 $fw-thin: 300;

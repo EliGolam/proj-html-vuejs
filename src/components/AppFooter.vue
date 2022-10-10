@@ -9,7 +9,7 @@
       </nav>
     </div>
     
-    <SubscribeNewsletterFormComponent class="cta" />
+    <SubscribeNewsletterFormComponent class="cta-subscribe" />
   </footer>
 </template>
 
@@ -51,13 +51,10 @@ export default {
 
 footer {
   width: 100%;
-
-  &> * {
-    flex-grow: 1;
+  
+  .cta-subscribe {
+    margin-left: auto;
   }
-}
-
-nav {
   
 }
 </style>
