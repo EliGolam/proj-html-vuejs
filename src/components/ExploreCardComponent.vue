@@ -94,6 +94,7 @@ article {
     
     .info-card {
       opacity: 1;
+      z-index: 2;
     }
   }
 }
