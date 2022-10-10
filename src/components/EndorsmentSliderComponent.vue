@@ -82,7 +82,7 @@ export default {
 @import '@/assets/styles/variables';
 
 div {
-  background-color: $clr-primary-light-purple;
+  background-color: $clr-primary-light;
 }
 
 .embla__container {

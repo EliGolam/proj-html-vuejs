@@ -12,6 +12,6 @@
 @import '@/assets/styles/variables';
 
 .icon {
-  color: $clr-primary-dark-purple;
+  color: $clr-primary-dark;
 }
 </style>

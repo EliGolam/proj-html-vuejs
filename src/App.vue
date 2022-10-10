@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <AppHeader v-if="$route.name !== 'home'" /> <!-- v-if to prevent duplicate headers since homeview has one -->
+    <h1 class="pageTitle visually-hidden">Bakery Avada</h1>
+
+    <!-- v-if to prevent duplicate headers since homeview has one -->
+    <AppHeader v-if="$route.name !== 'home'" /> 
     <AppHeaderWithHeroBG v-else />
 
     <!-- Router View -->

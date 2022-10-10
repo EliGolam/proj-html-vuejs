@@ -46,7 +46,7 @@ export default {
 
   // Icons
   font-size: $fs-4;
-  color: $clr-primary-dark-purple;
+  color: $clr-primary-dark;
 
   .icon {
     cursor: pointer;
@@ -56,7 +56,7 @@ export default {
 
     &:hover {
       transform: scale(1.2);
-      color: $clr-primary-purple;
+      color: $clr-primary;
     }
   }
 }

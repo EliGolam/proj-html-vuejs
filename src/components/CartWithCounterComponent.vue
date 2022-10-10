@@ -39,7 +39,7 @@ export default {
     width: $_size-4;
 
     // Aesthetic
-    background-color: $clr-primary-light-purple;
+    background-color: $clr-primary-light;
   }
 }
 </style>

@@ -6,7 +6,7 @@
     </div>
 
 
-    <div v-for="alert in alerts" :key="alert"
+    <div v-for="(alert, index) in alerts" :key="index"
       class="alert-item square-container flex-center"
     >
         <p class="price">{{alert.price}}</p>
@@ -43,7 +43,7 @@ import offerAlertsData from '@/assets/data/offerAlertsData.json'
 
   flex-direction: column;
 
-  box-shadow: 2px 2px 10px rgba($clr-dark, .5);
+  box-shadow: 2px 2px 10px rgba($clr-primary-dark, .4);
 
   .icon {
     font-size: $fs-2;

@@ -88,7 +88,7 @@ export default {
 .info-box {
   grid-area: info;
 
-  background-color: $clr-primary-light-purple;
+  background-color: $clr-primary-light;
   text-align: center;
 }
 </style>

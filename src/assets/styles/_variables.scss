@@ -3,24 +3,24 @@
 
 // GRADIENTS
 $dark-gradient: linear-gradient(
-    rgba($clr-primary-purple, 1),
-    rgba($clr-primary-dark-purple, 1)
+    rgba($clr-primary, 1),
+    rgba($clr-primary-dark, 1)
 );
 
 $center-fade-gradient-purple: linear-gradient(
-    rgba($clr-primary-purple, 0),
-    rgba($clr-primary-purple, .5),
-    rgba($clr-primary-purple, 1),
-    rgba($clr-primary-purple, .5),
-    rgba($clr-primary-purple, 0),
+    rgba($clr-primary, 0),
+    rgba($clr-primary, .5),
+    rgba($clr-primary, 1),
+    rgba($clr-primary, .5),
+    rgba($clr-primary, 0),
 );
 
 $center-fade-gradient-purple-light: linear-gradient(
-    rgba($clr-primary-purple, 0),
-    rgba($clr-primary-purple, .2),
-    rgba($clr-primary-purple, .5),
-    rgba($clr-primary-purple, .2),
-    rgba($clr-primary-purple, 0),
+    rgba($clr-primary, 0),
+    rgba($clr-primary, .2),
+    rgba($clr-primary, .5),
+    rgba($clr-primary, .2),
+    rgba($clr-primary, 0),
 );
 
 /* FONT */

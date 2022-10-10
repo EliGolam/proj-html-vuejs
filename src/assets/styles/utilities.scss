@@ -46,7 +46,7 @@
   // Font
   font-size: $fs-8;
   text-transform: uppercase;
-  color: $clr-primary-dark-purple;
+  color: $clr-primary-dark;
 
   // Shape of container
   padding: $_size-4 0;
@@ -60,12 +60,12 @@
 
 	&.router-link-exact-active {
     font-weight: $fw-medium;
-    border-color: $clr-primary-dark-purple;
+    border-color: $clr-primary-dark;
 	}
 
   &:hover {
-    color: $clr-primary-purple;
-    border-color: $clr-primary-purple;
+    color: $clr-primary;
+    border-color: $clr-primary;
 
     transform: translateY(-5%);
   }
@@ -85,7 +85,7 @@
 	$padding-x: $_size-5;
 	$padding-y: $_size-1;
 	$radius: .5em;
-	$dark: $clr-primary-dark-purple;
+	$dark: $clr-primary-dark;
 	$light: $clr-light;
 
 	// Font

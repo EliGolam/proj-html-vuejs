@@ -1,29 +1,28 @@
-/* Import CSS */
-@import 'variables.scss';
-
-
+// Setting Font Defaults
 $fs-default: $fs-6;
 $fw-default: $fw-regular;
 $f-line-height: 1.5;
 
 $default-font-settings: $fw-default $fs-default $ff-default;
 
+/* Default App styling that determines inherited styles */
 #app {
-    font: $default-font-settings;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font: $default-font-settings;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    line-height: $f-line-height;
+  line-height: $f-line-height;
+  color: $clr-dark; 
 
-    // FLEX
-    display: flex;
-    flex-direction: column;
+  // BackgroundColor
+  background-color: $clr-light;
 
-    // SIZE
-    height: 100vh;
-    overflow: auto;
+  // FLEX
+  display: flex;
+  flex-direction: column;
 
-    // Aesthetics
-    color: $clr-dark; 
+  // SIZE
+  height: 100vh;
+  overflow: auto;
 }
 
