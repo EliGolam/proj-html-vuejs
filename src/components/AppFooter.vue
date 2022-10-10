@@ -15,6 +15,7 @@
 
     <div class="row flex">
       <CopyrightStatementComponent :copyrightText="copyright" />
+      <SocialIconsComponent class="socials" />
     </div>
   </footer>
 </template>
@@ -29,10 +30,12 @@ import RoutingNavComponent from '@/components/shared/RoutingNavComponent.vue';
 import CartWithCounterComponent from '@/components/CartWithCounterComponent.vue';
 import NewsletterFormComponent from '@/components/NewsletterFormComponent.vue';
 import CopyrightStatementComponent from '@/components/CopyrightStatementComponent.vue';
+import SocialIconsComponent from './shared/SocialIconsComponent.vue';
 
 // Data
 import { footerLinks } from '@/assets/data/navLinksData.json';
 import footerTextData from '@/assets/data/footerTextData.json'
+
 
 
 export default {
@@ -49,8 +52,9 @@ export default {
     RoutingNavComponent,
     CartWithCounterComponent,
     NewsletterFormComponent,
-    CopyrightStatementComponent
-  }
+    CopyrightStatementComponent,
+    SocialIconsComponent
+}
 }
 </script>
 
@@ -61,11 +65,13 @@ export default {
 
 footer {
   flex-direction: column;
+  row-gap: $_size-7;
   .row {
     width: 100%;
     align-items: center;
     
-    .cta-subscribe {
+    .cta-subscribe, 
+    .socials {
       margin-left: auto;
     }
   }

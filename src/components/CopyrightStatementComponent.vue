@@ -17,5 +17,6 @@ export default {
 
 p {
   font-size: $fs-9;
+  color: $clr-gray;
 }
 </style>
