@@ -1,5 +1,7 @@
 <template>
   <section class="grid">
+    <h2 class="visually-hidden">Our Workflow</h2>
+
     <WorkFlowCardComponent v-for="card in cards" :key="card.id" 
       :card="card"
       class="card"

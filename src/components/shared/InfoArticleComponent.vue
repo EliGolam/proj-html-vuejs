@@ -1,7 +1,7 @@
 <template>
-	<article :class="globalColor" class="flow">
+	<div :class="globalColor" class="flow">
 
-    <!-- Optional ability to customize the header tag for this article for accessibility purposes -->
+    <!-- Optional ability to customize the header tag for this div for accessibility purposes -->
 		<component 
       :is="titleTag" 
       :class="[titleEmphasis, emphasisSize]"
@@ -19,7 +19,7 @@
       class="cta-btn"
 		/>
     
-	</article>
+	</div>
 </template>
 
 <script>

@@ -1,24 +1,30 @@
 <template>
-  <div class="embla" ref="emblaNode">
-    <div class="embla__container">
-      <div class="embla__slide flex-center" 
-        v-for="endorsement in endorsements" 
-        :key="endorsement.person"
-      >
-        <div class="info-card flow"
-          @mouseover="pauseAutoplay()"
-          @mouseleave="resumeAutoplay()"
+  <section>
+    <h3 class="visually-hidden">Endorsements</h3>
+  
+    <div class="embla" ref="emblaNode">
+      <div class="embla__container">
+        <div class="embla__slide flex-center" 
+          v-for="endorsement in endorsements" 
+          :key="endorsement.person"
         >
-          <InfoArticleComponent 
-            :info="endorsement"
-            :withCTA="false"
-            :emphasisedText="'onContent'"
-          />
-          <p class="font-subtle-caps"> {{ endorsement.person }} </p>
+          <article class="info-card flow"
+            @mouseover="pauseAutoplay()"
+            @mouseleave="resumeAutoplay()"
+          >
+            <InfoArticleComponent 
+              :info="endorsement"
+              :withCTA="false"
+              :emphasisedText="'onContent'"
+              :titleTag="'h4'"
+            />
+            <p class="font-subtle-caps"> {{ endorsement.person }} </p>
+          </article>
         </div>
       </div>
     </div>
-  </div>
+    
+  </section>
 </template>
 
 <script>

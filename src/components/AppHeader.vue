@@ -3,7 +3,9 @@
 
 		<LogoComponent />
 
-    <nav class="nav-bar">
+    <nav class="nav-bar" role="navigation" aria-labelledby="nav-bar__title">
+      <h2 id="nav-bar__title" class="visually-hidden">Header Nav Bar</h2>
+
       <RoutingNavComponent :navLinks="links" />
 
       <MyAccountComponent class="my-account" />
