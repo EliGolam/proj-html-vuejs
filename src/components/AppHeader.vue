@@ -1,13 +1,15 @@
 <template>
-	<header class="wide-container">
+	<header class="wide-container flex-center">
 
 		<LogoComponent />
 
-		<RoutingNavComponent :navLinks="links" class="nav-bar" />
+    <nav class="nav-bar">
+      <RoutingNavComponent :navLinks="links" />
 
-		<MyAccountComponent class="my-account" />
+      <MyAccountComponent class="my-account" />
 
-		<ShoppingCartComponent />	
+      <ShoppingCartComponent />
+    </nav>	
 
 	</header>
 </template>
@@ -43,15 +45,8 @@ export default {
 @import '@/assets/styles/variables';
 
 header {
-	// VARIABLES
-	$default-padding: $_size-2;
-	
   // Size
 	width: 100%;
-
-	// Flex Container
-	display: flex;
-	align-items: center;
 
 	// Flex Items
 	.nav-bar {
@@ -59,7 +54,7 @@ header {
 	}
 
 	.my-account {
-		margin: 0 $default-padding;
+		margin: 0 $_size-1;
 	}
 }
 </style>

@@ -23,9 +23,15 @@
 
 
 // NAV
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: $_size-4;
+}
+
 .nav-routing-links {
 	// Local Variables
-	$c-gap: $_size-4;
+	$c-gap: $_size-5;
 	
 	// Flex Container
 	display: flex;
