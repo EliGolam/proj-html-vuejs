@@ -4,8 +4,8 @@
       <div>
         <LogoComponent />
 
-        <nav class="nav-bar">
-          <h2 class="visually-hidden">Footer Nav Bar</h2>
+        <nav class="nav-bar" role="navigation" aria-labelledby="nav-bar__title">
+          <h2 id="nav-bar__title" class="visually-hidden">Footer Nav Bar</h2>
           <RoutingNavComponent :navLinks="links" :isLowerCase="true" />
           <CartWithCounterComponent />
         </nav>
