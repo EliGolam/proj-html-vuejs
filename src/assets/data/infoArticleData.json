@@ -11,6 +11,18 @@
     "Start Shopping",
     "/shop"
   ],
+  "corporateArticle": [
+    "Internation Bakery",
+    "Corporate Events",
+    "Explore More",
+    "/"
+  ],
+  "weddingArticle": [
+    "Private Dining Hall",
+    "Weddings & Parties",
+    "Explore More",
+    "/"
+  ],
   "shopPreviewArticle": [
     "Find a freshly backed product perfect for you",
     "Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Nunc non blandit massa enim nec dui nunc mattis enim.",
