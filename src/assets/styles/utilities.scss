@@ -35,11 +35,12 @@
 // Overlay
 .alert-box {
   position: absolute;
-    top: 10rem;
+    top: calc(100% - 12rem);
     z-index: 5;
     right: calc(100% - 5rem);
 
   @media only screen and (min-width: $md-breakpoint) {  
+    top: 10rem;
     right: 2rem;
   }
 }

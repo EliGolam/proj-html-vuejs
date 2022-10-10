@@ -14,6 +14,7 @@
 	// Flex Container
 	display: flex;
   flex-direction: column;
+  row-gap: $_size-1;
 	
 
   @media only screen and (min-width: $md-breakpoint) {
@@ -28,22 +29,13 @@
   cursor: pointer;
 
   // Font
-  font-size: $fs-8;
+  font-size: $fs-5;
   text-transform: uppercase;
   color: $clr-primary-dark;
 
   // Shape of container
   border-bottom: 2px solid transparent;
   
-  @media only screen and (max-width: $md-breakpoint) {
-    text-align: end;
-  }
-
-  @media only screen and (min-width: $md-breakpoint) {
-    width: 100%;
-    padding: $_size-4 0;
-  }
-
   // Transitions
   transition: 
     border-bottom $_speed-1 ease,
@@ -55,10 +47,20 @@
     border-color: $clr-primary-dark;
 	}
 
-  &:hover {
-    color: $clr-primary;
-    border-color: $clr-primary;
+  @media only screen and (max-width: $md-breakpoint) {
+    text-align: end;
+  }
 
-    transform: translateY(-5%);
+  @media only screen and (min-width: $md-breakpoint) {
+    width: 100%;
+    padding: $_size-4 0;
+    font-size: $fs-8;
+
+    &:hover {
+      color: $clr-primary;
+      border-color: $clr-primary;
+  
+      transform: translateY(-5%);
+    }
   }
 }

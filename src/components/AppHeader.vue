@@ -3,13 +3,22 @@
 
 		<LogoComponent />
 
-    <div class="menu" :class="{ active : isNavBarActive }">
+    <div class="menu" >
       <font-awesome-icon icon="fa-solid fa-bars" 
+        v-if="!isNavBarActive"
         class="menu-icon hamburger-menu" 
         @click="toggleNavBar()"
       />
 
-      <nav class="nav-bar" role="navigation" aria-labelledby="nav-bar__title">
+      <font-awesome-icon icon="fa-solid fa-x"
+        v-else
+        class="menu-icon hamburger-menu" 
+        @click="toggleNavBar()"
+      />
+
+      <nav class="nav-bar" role="navigation" aria-labelledby="nav-bar__title"
+        :class="{ active : isNavBarActive }"
+      >
 
         <h2 id="nav-bar__title" class="visually-hidden">Header Nav Bar</h2>
         
@@ -77,14 +86,17 @@ header {
         display: none;
         position: absolute;
           right: 0%;
-      }
-      &.active {
-        .nav-bar {
-          display: flex;
-        }
-        
-      }
 
+        background-color: rgba($clr-light, .5);
+        border-radius: .5em;
+        width: 16ch;
+        padding: $_size-4 $_size-1;
+
+        &.active {
+          display: flex;
+          gap: $_size-1;
+        }
+      }
       
     }
 
