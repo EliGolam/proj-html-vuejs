@@ -27,6 +27,7 @@ import LocationsSection from '@/components/macrosections/LocationsSection.vue';
 import SocialSection from '@/components/macrosections/SocialSection.vue';
 import CTASection from '../components/macrosections/CTASection.vue';
 
+
 export default {
   name: "HomeView",
 
@@ -37,7 +38,7 @@ export default {
     WorkFlowSection,
     LocationsSection,
     SocialSection,
-    CTASection
+    CTASection,
 }
 }
 </script>

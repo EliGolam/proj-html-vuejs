@@ -76,6 +76,7 @@ export default {
   position: relative;
 
   img {
+    height: 100%;
     object-fit: cover;
   }
 
