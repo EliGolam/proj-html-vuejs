@@ -5,6 +5,7 @@
       :key="navLink.name" 
       :link="navLink"
       class="nav-link"
+      :class="{ lowerCase : isLowerCase }"
     />
   
   </nav>
@@ -38,5 +39,8 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 	
-
+.nav-link.lowerCase {
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
 </style>

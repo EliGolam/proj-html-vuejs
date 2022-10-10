@@ -4,7 +4,7 @@
       <LogoComponent />
       
       <nav class="flex">
-        <NavBarComponent :navLinks="links" />
+        <NavBarComponent :navLinks="links" :isLowerCase="true" />
 
         <CartWithCounterComponent />
       </nav>
