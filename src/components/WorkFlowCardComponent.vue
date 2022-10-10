@@ -74,7 +74,6 @@ article {
 
   padding: $_size-7;
 
-  
   .head {
     align-items: center;
   }
