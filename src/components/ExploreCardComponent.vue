@@ -23,8 +23,8 @@ import InfoArticleComponent from '@/components/shared/InfoArticleComponent.vue'
     props: {
       cardInfo: Object,
       /* Format: {
-        "name": String
-        "info": String
+        "title": String
+        "content": String
         "cta" : String
         "ctaPath": String
         "bgImg": String

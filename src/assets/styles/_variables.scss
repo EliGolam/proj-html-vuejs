@@ -86,4 +86,7 @@ $_speed-1: 200ms;
 $_speed-2: 250ms;
 $_speed-3: 300ms;
 $_speed-4: 400ms;
+$_speed-5: 500ms;
 
+/* Cubic Beziers */ 
+$_cubicB-bounce: cubic-bezier(.03,-0.45,.5,2.5);

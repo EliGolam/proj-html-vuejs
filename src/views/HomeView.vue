@@ -14,6 +14,9 @@
     <SocialSection class="container" />
 
     <CTASection />
+
+  
+    <OfferAlertOverlayComponent />
   </div>
 </template>
 
@@ -26,6 +29,7 @@ import WorkFlowSection from '@/components/macrosections/WorkFlowSection.vue';
 import LocationsSection from '@/components/macrosections/LocationsSection.vue';
 import SocialSection from '@/components/macrosections/SocialSection.vue';
 import CTASection from '../components/macrosections/CTASection.vue';
+import OfferAlertOverlayComponent from '@/components/shared/OfferAlertOverlayComponent.vue';
 
 
 export default {
@@ -39,6 +43,7 @@ export default {
     LocationsSection,
     SocialSection,
     CTASection,
+    OfferAlertOverlayComponent
 }
 }
 </script>
