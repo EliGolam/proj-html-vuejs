@@ -77,65 +77,8 @@
 }
 
 
-// SCROLLER 
-.scroll-snap {
-    scroll-snap-type: inline mandatory;
-}
-
-.scroll-snap > * {
-    scroll-snap-align: center;
-}
-
-.display-section {
-  // Flex Container
-  gap: $_size-3;
-  flex-direction: column;
-  align-items: center;
-
-  .card-slider {
-    flex-basis: 60%;
-    min-width: 400px;
-    margin-left: auto;
-  }
-
-  @media only screen and (min-width: $md-breakpoint) {
-    flex-direction: row;
-  }
-}
 
 
-// Font
-.ff-default {
-    font-family: $ff-default;
-}
-
-.ff-secondary {
-    font-family: $ff-secondary;
-}
-
-.font-subtle-caps {
-    font-size: $fs-9;
-    font-weight: $fw-regular;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-}
-
-.font-emphasized {
-  color: $clr-primary-dark-purple;
-  font-size: $fs-2;
-  font-weight: $fw-bold;
-  font-family: $ff-secondary;
-  line-height: 1.2;
-
-  &.big {
-      font-size: $fs-1;
-      font-weight: $fw-extra-bold;
-  }
-}
-
-.text-primary-dark {
-  color: $clr-primary-dark-purple;
-}
 
 .btn-default {
 	// Variables

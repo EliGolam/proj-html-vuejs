@@ -1,15 +1,21 @@
 <template>
   <footer class="container flex">
-    <div>
-      <LogoComponent />
+    <div class="row flex">
+      <div>
+        <LogoComponent />
 
-      <nav class="nav-bar">
-        <RoutingNavComponent :navLinks="links" :isLowerCase="true" />
-        <CartWithCounterComponent />
-      </nav>
+        <nav class="nav-bar">
+          <RoutingNavComponent :navLinks="links" :isLowerCase="true" />
+          <CartWithCounterComponent />
+        </nav>
+      </div>
+      
+      <NewsletterFormComponent class="cta-subscribe" />
     </div>
-    
-    <SubscribeNewsletterFormComponent class="cta-subscribe" />
+
+    <div class="row flex">
+      <CopyrightStatementComponent :copyrightText="copyright" />
+    </div>
   </footer>
 </template>
 
@@ -21,10 +27,12 @@
 import LogoComponent from '@/components/shared/LogoComponent.vue';
 import RoutingNavComponent from '@/components/shared/RoutingNavComponent.vue';
 import CartWithCounterComponent from '@/components/CartWithCounterComponent.vue';
-import SubscribeNewsletterFormComponent from './SubscribeNewsletterFormComponent.vue';
+import NewsletterFormComponent from '@/components/NewsletterFormComponent.vue';
+import CopyrightStatementComponent from '@/components/CopyrightStatementComponent.vue';
 
 // Data
 import { footerLinks } from '@/assets/data/navLinksData.json';
+import footerTextData from '@/assets/data/footerTextData.json'
 
 
 export default {
@@ -32,6 +40,7 @@ export default {
   data() {
     return {
       links: footerLinks,
+      copyright: footerTextData.copyright
     }
   },
 
@@ -39,7 +48,8 @@ export default {
     LogoComponent,
     RoutingNavComponent,
     CartWithCounterComponent,
-    SubscribeNewsletterFormComponent
+    NewsletterFormComponent,
+    CopyrightStatementComponent
   }
 }
 </script>
@@ -50,11 +60,14 @@ export default {
 @import '@/assets/styles/variables';
 
 footer {
-  width: 100%;
-  
-  .cta-subscribe {
-    margin-left: auto;
+  flex-direction: column;
+  .row {
+    width: 100%;
+    align-items: center;
+    
+    .cta-subscribe {
+      margin-left: auto;
+    }
   }
-  
 }
 </style>

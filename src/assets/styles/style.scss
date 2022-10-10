@@ -7,7 +7,11 @@
 
 /* Utilities */
 @import '_containers.scss';
+@import '_font-utilities';
 @import 'utilities.scss';
+
+/* Slider */
+@import '_slider.scss';
 
 /* Block Styling */
 @import '_app.scss';

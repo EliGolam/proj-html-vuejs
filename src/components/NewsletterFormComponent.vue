@@ -1,5 +1,5 @@
 <template>
-  <form class="cta-newsletter flex" @submit.prevent>
+  <form class="flex" @submit.prevent>
     <label for="userEmail" class="font-emphasized">Subscribe to our Newsletter</label>
 
     <div class="form-input flex">
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'SubscribeNewsLetterForm'
+  name: 'NewsLetterForm'
 }
 </script>
 
@@ -22,6 +22,7 @@ form {
   /* Flex Container */
   flex-direction: column;
   align-items: flex-end;
+  row-gap: $_size-6;
 
   // Size and Shape
   width: 50%;
@@ -36,7 +37,7 @@ form {
   .form-input {
     /* Flex Container */
     justify-content: flex-end;
-    gap: $_size-4;
+    gap: $_size-3;
 
     // Size and Shape
     width: 100%;

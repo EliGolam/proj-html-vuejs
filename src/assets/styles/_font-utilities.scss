@@ -1,0 +1,32 @@
+// Font
+.ff-default {
+  font-family: $ff-default;
+}
+
+.ff-secondary {
+  font-family: $ff-secondary;
+}
+
+.font-subtle-caps {
+  font-size: $fs-9;
+  font-weight: $fw-regular;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+.font-emphasized {
+color: $clr-primary-dark-purple;
+font-size: $fs-2;
+font-weight: $fw-bold;
+font-family: $ff-secondary;
+line-height: 1.2;
+
+&.big {
+    font-size: $fs-1;
+    font-weight: $fw-extra-bold;
+}
+}
+
+.text-primary-dark {
+color: $clr-primary-dark-purple;
+}
