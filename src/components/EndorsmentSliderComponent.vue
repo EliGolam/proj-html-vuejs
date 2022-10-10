@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="flex-center">
     <h3 class="visually-hidden">Endorsements</h3>
   
     <div class="embla" ref="emblaNode">
@@ -87,7 +87,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-div {
+section {
   background-color: $clr-primary-light;
 }
 

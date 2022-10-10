@@ -1,20 +1,21 @@
 <template>
-  <div class="home flow-section">
+  <div class="home">
     
-    <OurProductsSection id='our-products' class="container" />
-    
-    <CorporateWeddingsSection id="corporate-weddings" class="container" />
+    <div class="flow-section">
+      <OurProductsSection id='our-products' class="container" />
+      
+      <CorporateWeddingsSection id="corporate-weddings" class="container" />
 
-    <ShopPreviewSection class="container" />
+      <ShopPreviewSection id="shop-preview" class="container" />
 
-    <WorkFlowSection class="container" /> 
+      <WorkFlowSection id="workflow" class="container" /> 
 
-    <LocationsSection class="container" />
+      <LocationsSection id="locations" class="container" />
 
-    <SocialSection class="container" />
+      <SocialSection id="social" class="container" />
 
-    <CTASection />
-
+      <CTASection id="cta" />
+    </div>
   
     <OfferAlertOverlayComponent />
   </div>

@@ -1,5 +1,7 @@
 <template>
 	<div class="hero-bg flex-column">
+    <h1 class="pageTitle visually-hidden">Bakery Avada: Homepage</h1>
+
     <AppHeader />
 
 		<div class="hero-bg__info container flex-column">

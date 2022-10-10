@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <h1 class="pageTitle visually-hidden">Bakery Avada</h1>
+    <div class="loading-screen flex-center">
+      <p v-if="loading">Loading page...</p>
+    </div>
 
-    <!-- v-if to prevent duplicate headers since homeview has one -->
-    <AppHeader v-if="$route.name !== 'home'" /> 
-    <AppHeaderWithHeroBG v-else />
+    <div>
+      <!-- v-if to prevent duplicate headers since homeview has one -->
+      <AppHeader v-if="$route.name !== 'home'" /> 
+      <AppHeaderWithHeroBG v-else />
 
-    <!-- Router View -->
-    <router-view/>
+      <!-- Router View -->
+      <router-view />
+    </div>
 
     <AppFooter />
   </div>
@@ -22,6 +26,12 @@ import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: 'App',
+
+  data() {
+    return {
+      loading: false
+    }
+  },
 
   components: {
     AppHeader,
