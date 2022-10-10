@@ -27,7 +27,7 @@ export default {
     AppHeader,
     AppHeaderWithHeroBG,
     AppFooter
-}
+  }
 }
 </script>
 
