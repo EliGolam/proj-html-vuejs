@@ -1,7 +1,7 @@
 <template>
   <article :style="bgImg">
     <div class="flex">
-      <h3>{{ card.title }}</h3>
+      <h3 class="font-emphasized text-light">{{ card.title }}</h3>
       <p class="process-flow">{{ processId }}</p>
     </div>
 
