@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <div class="loading-screen flex-center">
-      <p v-if="loading">Loading page...</p>
+    <div class="loading-screen flex-column-center" v-show="loading">
+      <AppHeader /> 
+      <PageLoaderComponent />
     </div>
 
-    <div>
+    <div v-show="!loading">
       <!-- v-if to prevent duplicate headers since homeview has one -->
       <AppHeader v-if="$route.name !== 'home'" /> 
       <AppHeaderWithHeroBG v-else />
@@ -23,21 +24,30 @@
 import AppHeader from '@/components/AppHeader.vue';
 import AppHeaderWithHeroBG from './components/AppHeaderWithHeroBG.vue';
 import AppFooter from './components/AppFooter.vue';
+import PageLoaderComponent from './components/shared/PageLoaderComponent.vue';
 
 export default {
   name: 'App',
 
   data() {
     return {
-      loading: false
+      loading: true
     }
+  },
+
+  mounted() {
+    setTimeout(() => {
+      console.log(this.loading);
+      this.loading = false;
+    }, 6000);
   },
 
   components: {
     AppHeader,
     AppHeaderWithHeroBG,
-    AppFooter
-  }
+    AppFooter,
+    PageLoaderComponent
+}
 }
 </script>
 

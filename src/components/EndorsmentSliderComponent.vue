@@ -54,7 +54,6 @@ export default {
     methods: {
       nextSlide() {
         clearInterval(this.autoplayIntevalID);
-        console.log("Test Scroll", this.counter++);
         this.emblaApi.scrollNext();
         this.autoplay();
       },
