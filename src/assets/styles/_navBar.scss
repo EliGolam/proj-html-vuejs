@@ -1,0 +1,48 @@
+// NAV
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: $_size-4;
+}
+
+.nav-routing-links {
+	// Local Variables
+	$c-gap: $_size-5;
+	
+	// Flex Container
+	display: flex;
+  align-items: center;
+	column-gap: $c-gap;
+}
+
+
+.nav-link {
+  cursor: pointer;
+
+  // Font
+  font-size: $fs-8;
+  text-transform: uppercase;
+  color: $clr-primary-dark;
+
+  // Shape of container
+  padding: $_size-4 0;
+  border-bottom: 2px solid transparent;
+
+  // Transitions
+  transition: 
+    border-bottom $_speed-1 ease,
+    color $_speed-2 ease-in,
+    transform $_speed-3 ease-in;
+
+	&.router-link-exact-active {
+    font-weight: $fw-medium;
+    border-color: $clr-primary-dark;
+	}
+
+  &:hover {
+    color: $clr-primary;
+    border-color: $clr-primary;
+
+    transform: translateY(-5%);
+  }
+}

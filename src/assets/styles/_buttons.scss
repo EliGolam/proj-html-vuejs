@@ -1,0 +1,50 @@
+.btn-default {
+	// Variables
+	$padding-x: $_size-5;
+	$padding-y: $_size-1;
+	$radius: .5em;
+	$dark: $clr-primary-dark;
+	$light: $clr-light;
+
+	// Font
+	font-size: $fs-7;
+	font-weight: $fw-bold;
+
+	// Shape
+	padding: $padding-y $padding-x;
+	border-radius: $radius;
+
+
+	// Transitions
+	transition: 
+		color $_speed-3 ease,
+		background-color $_speed-3 ease;
+
+
+	// BTN Colours	
+	@mixin lightScheme {
+		background-color: $light;
+		color: $dark;
+	}
+
+	@mixin darkScheme {
+		background-color: $dark;
+		color: $light;
+	}
+	
+	&.light {
+		@include lightScheme();
+
+		&:hover {
+			@include darkScheme();
+		}
+	}
+
+	&.dark {
+		@include darkScheme();
+
+		&:hover {
+			@include lightScheme();
+		}
+	}
+}

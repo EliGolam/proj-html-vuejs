@@ -21,114 +21,14 @@
   margin-top: $_size-10;
 }
 
-
-// NAV
-.nav-bar {
-  display: flex;
-  align-items: center;
-  gap: $_size-4;
+.flow > * + * {
+  margin-top: $_size-3;
 }
 
-.nav-routing-links {
-	// Local Variables
-	$c-gap: $_size-5;
-	
-	// Flex Container
-	display: flex;
-  align-items: center;
-	column-gap: $c-gap;
-}
-
-
-.nav-link {
-  cursor: pointer;
-
-  // Font
-  font-size: $fs-8;
-  text-transform: uppercase;
-  color: $clr-primary-dark;
-
-  // Shape of container
-  padding: $_size-4 0;
-  border-bottom: 2px solid transparent;
-
-  // Transitions
-  transition: 
-    border-bottom $_speed-1 ease,
-    color $_speed-2 ease-in,
-    transform $_speed-3 ease-in;
-
-	&.router-link-exact-active {
-    font-weight: $fw-medium;
-    border-color: $clr-primary-dark;
-	}
-
-  &:hover {
-    color: $clr-primary;
-    border-color: $clr-primary;
-
-    transform: translateY(-5%);
-  }
-}
 
 // Cards
 .info-card {
   max-width: 50ch;
-}
-
-
-
-
-
-.btn-default {
-	// Variables
-	$padding-x: $_size-5;
-	$padding-y: $_size-1;
-	$radius: .5em;
-	$dark: $clr-primary-dark;
-	$light: $clr-light;
-
-	// Font
-	font-size: $fs-7;
-	font-weight: $fw-bold;
-
-	// Shape
-	padding: $padding-y $padding-x;
-	border-radius: $radius;
-
-
-	// Transitions
-	transition: 
-		color $_speed-3 ease,
-		background-color $_speed-3 ease;
-
-
-	// BTN Colours	
-	@mixin lightScheme {
-		background-color: $light;
-		color: $dark;
-	}
-
-	@mixin darkScheme {
-		background-color: $dark;
-		color: $light;
-	}
-	
-	&.light {
-		@include lightScheme();
-
-		&:hover {
-			@include darkScheme();
-		}
-	}
-
-	&.dark {
-		@include darkScheme();
-
-		&:hover {
-			@include lightScheme();
-		}
-	}
 }
 
 
