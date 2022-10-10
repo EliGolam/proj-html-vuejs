@@ -6,7 +6,7 @@
       <nav class="flex">
         <NavBarComponent :navLinks="links" />
 
-        <ShoppingCartComponent />
+        <CartWithCounterComponent />
       </nav>
     </div>
     
@@ -16,11 +16,12 @@
 
 <script>
 import LogoComponent from '@/components/shared/LogoComponent.vue';
-import NavBarComponent from './shared/NavBarComponent.vue';
-import ShoppingCartComponent from './ShoppingCartComponent.vue';
+import NavBarComponent from '@/components/shared/NavBarComponent.vue';
+import CartWithCounterComponent from '@/components/CartWithCounterComponent.vue';
+import SubscribeNewsletterFormComponent from './SubscribeNewsletterFormComponent.vue';
 
 import { footerLinks } from '@/assets/data/navLinksData.json';
-import SubscribeNewsletterFormComponent from './SubscribeNewsletterFormComponent.vue';
+
 
 
 export default {
@@ -34,7 +35,7 @@ export default {
     components: {
     LogoComponent,
     NavBarComponent,
-    ShoppingCartComponent,
+    CartWithCounterComponent,
     SubscribeNewsletterFormComponent
 }
 }

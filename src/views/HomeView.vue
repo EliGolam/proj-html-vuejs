@@ -13,7 +13,7 @@
 
     <SocialSection class="container" />
 
-    <CTASection class="container" />
+    <CTASection />
   </div>
 </template>
 

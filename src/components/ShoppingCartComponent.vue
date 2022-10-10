@@ -1,5 +1,5 @@
 <template>
-  <font-awesome-icon :icon="['fas', 'cart-shopping']" />
+  <font-awesome-icon :icon="['fas', 'cart-shopping']" class="icon" />
 </template>
 
 <script>
@@ -9,5 +9,9 @@
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
 
+.icon {
+  color: $clr-primary-dark-purple;
+}
 </style>
