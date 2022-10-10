@@ -3,7 +3,7 @@
     <ShoppingCartComponent />
 
     <div class="counter flex-center round-container">
-      <p>{{ itemsInCart }}</p>
+      <p class="text-primary-dark">{{ itemsInCart }}</p>
     </div>
   </div>
 </template>

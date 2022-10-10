@@ -1,11 +1,10 @@
 <template>
   <footer class="container flex">
-    <div class="nav-elements">
+    <div>
       <LogoComponent />
-      
-      <nav class="flex">
-        <NavBarComponent :navLinks="links" :isLowerCase="true" />
 
+      <nav class="flex">
+        <RoutingNavComponent :navLinks="links" :isLowerCase="true" />
         <CartWithCounterComponent />
       </nav>
     </div>
@@ -16,7 +15,7 @@
 
 <script>
 import LogoComponent from '@/components/shared/LogoComponent.vue';
-import NavBarComponent from '@/components/shared/NavBarComponent.vue';
+import RoutingNavComponent from '@/components/shared/RoutingNavComponent.vue';
 import CartWithCounterComponent from '@/components/CartWithCounterComponent.vue';
 import SubscribeNewsletterFormComponent from './SubscribeNewsletterFormComponent.vue';
 
@@ -34,7 +33,7 @@ export default {
 
     components: {
     LogoComponent,
-    NavBarComponent,
+    RoutingNavComponent,
     CartWithCounterComponent,
     SubscribeNewsletterFormComponent
 }
@@ -46,6 +45,7 @@ export default {
 
 footer {
   width: 100%;
+
   &> * {
     flex-grow: 1;
   }
@@ -53,8 +53,6 @@ footer {
 
 
 nav {
-  align-items: center;
-
   gap: $_size-4;
 }
 </style>

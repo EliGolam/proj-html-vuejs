@@ -23,12 +23,13 @@
 
 
 // NAV
-.nav-bar {
+.nav-routing-links {
 	// Local Variables
-	$c-gap: $_size-2;
+	$c-gap: $_size-4;
 	
 	// Flex Container
 	display: flex;
+  align-items: center;
 	column-gap: $c-gap;
 }
 
@@ -124,6 +125,10 @@
       font-size: $fs-1;
       font-weight: $fw-extra-bold;
   }
+}
+
+.text-primary-dark {
+  color: $clr-primary-dark-purple;
 }
 
 .btn-default {

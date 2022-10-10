@@ -3,7 +3,7 @@
 
 		<LogoComponent />
 
-		<NavBarComponent :navLinks="links" class="nav-bar" />
+		<RoutingNavComponent :navLinks="links" class="nav-bar" />
 
 		<MyAccountComponent class="my-account" />
 
@@ -16,7 +16,7 @@
 // Components
 import MyAccountComponent from '@/components/MyAccountComponent.vue';
 import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
-import NavBarComponent from '@/components/shared/NavBarComponent.vue';
+import RoutingNavComponent from '@/components/shared/RoutingNavComponent.vue';
 
 // Import Data
 import { headerLinks } from '@/assets/data/navLinksData.json';
@@ -33,7 +33,7 @@ export default {
   components: {
     MyAccountComponent,
     ShoppingCartComponent,
-    NavBarComponent,
+    RoutingNavComponent,
     LogoComponent
 }
 }

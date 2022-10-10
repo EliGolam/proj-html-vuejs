@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-bar">
+  <div class="nav-routing-links">
 
     <RoutingNavLinkComponent v-for="navLink in navLinks" 
       :key="navLink.name" 
@@ -8,14 +8,14 @@
       :class="{ lowerCase : isLowerCase }"
     />
   
-  </nav>
+  </div>
 </template>
 
 <script>
 import RoutingNavLinkComponent from '@/components/shared/RoutingNavLinkComponent.vue';
 
 export default {
-	name: "NavBarComponent",
+	name: "RoutingNavComponent",
 	props: {
 		navLinks: Array, // Array of Objects
 		/* Format
