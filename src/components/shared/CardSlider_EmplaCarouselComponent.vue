@@ -4,11 +4,10 @@
     <div class="embla__container" :class="cardContainerClass">
       <div class="embla__slide" v-for="card in cardsCollection" :key="card.name" >
         <DisplayCardComponent v-if="typeOfCards === 'display'"
-          :cardInfo="card" 
-        />
-        <DisplayCardComponent v-else
           :cardInfo="card"
-          :cardShape="'square'" 
+        />
+        <ShopCardComponent  v-else
+          :cardInfo="card"
         />
       </div>
     </div>
@@ -33,6 +32,8 @@
 <script>
 import emblaCarouselVue from 'embla-carousel-vue'
 import DisplayCardComponent from './DisplayCardComponent.vue';
+import ShopCardComponent from './ShopCardComponent.vue';
+
 
 export default {
     name: "CardSlider",
@@ -66,22 +67,17 @@ export default {
       }
     },
 
-    components: { 
-      DisplayCardComponent 
-    }
+    components: {
+    DisplayCardComponent,
+    ShopCardComponent
+}
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-.embla {
-	overflow: hidden;
-	position: relative;
-}
 .embla__container {
-	display: flex;
-
   &.default {
     .embla__slide {
       flex: 0 0 30%;
@@ -103,41 +99,5 @@ export default {
       margin-right: $_size-3;
     }
   }
-}
-
-
-// Slider Navigation Buttons
-.slider-nav-btn {
-	$padding: $_size-1;
-
-	position: absolute;
-
-	color: $clr-light;
-
-	background: $center-fade-gradient-purple;
-	opacity: .65;
-
-	// Transitions
-	transition: opacity $_speed-1 ease;
-
-	&:hover {
-		opacity: 1;
-	}
-
-	&.slider-horizontal{
-		top: 50%;
-		transform: translateY(-50%);
-		height: 90%;
-		padding: 0 $padding;
-		
-		&.slider-next {
-			right: 0;
-		}
-
-		&.slider-prev {
-			left: 0;
-		}
-	}
-		
 }
 </style>

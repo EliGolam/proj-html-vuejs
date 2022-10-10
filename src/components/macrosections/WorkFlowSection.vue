@@ -6,15 +6,15 @@
       :style="`grid-area: card${card.id}`"
     />
 
-    <WorkFlowInfoCardComponent class="card centerCard" />
+    <EndorsmentSliderComponent />
   </section>
 </template>
 
 <script>
 import WorkFlowCardComponent from '@/components/WorkFlowCardComponent.vue';
-import WorkFlowInfoCardComponent from '@/components/WorkFlowInfoCardComponent.vue';
+import EndorsmentSliderComponent from '../EndorsmentSliderComponent.vue';
 
-import workFlowSectionText from '@/assets/data/workFlowSectionText.json'
+import workFlowSectionText from '@/assets/data/workFlowSectionText.json';
 
 export default {
     name: "WorkFlowSection",
@@ -25,10 +25,10 @@ export default {
       }
     },
 
-    components: { 
-      WorkFlowCardComponent,
-      WorkFlowInfoCardComponent 
-    }
+    components: {
+    WorkFlowCardComponent,
+    EndorsmentSliderComponent
+}
 }
 </script>
 
@@ -46,7 +46,7 @@ $c-gap: $_size-5;
   "card3 card3";
 
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 700px);
+  grid-template-rows: repeat(3, 500px);
 
   column-gap: $c-gap;
   row-gap: $r-gap;

@@ -2,7 +2,7 @@
   <section class="grid">
     <div v-for="index in numderOfCards" :key="index"
       class="card"
-      :style="`grid-area = card${index}`"
+      :style="`grid-area: card${index}`"
     >
       <img :src="getPath(index)" alt="">
     </div>

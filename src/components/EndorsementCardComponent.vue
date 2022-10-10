@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'WorkFlowInfoCardComponent'
+  name: 'EndorsementCardComponent'
 }
 </script>
 
@@ -14,6 +14,7 @@ export default {
 @import '@/assets/styles/variables';
 
 article {
-  background-color: rgba($clr-primary-purple, .3);
+  background-color: $clr-primary-light-purple;
+  padding: $_size-7;
 }
 </style>

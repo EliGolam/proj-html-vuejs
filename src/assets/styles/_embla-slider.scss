@@ -1,0 +1,45 @@
+.embla {
+	overflow: hidden;
+	position: relative;
+}
+.embla__container {
+	display: flex;
+
+  
+}
+
+
+// Slider Navigation Buttons
+.slider-nav-btn {
+	$padding: $_size-1;
+
+	position: absolute;
+
+	color: $clr-light;
+
+	background: $center-fade-gradient-purple;
+	opacity: .65;
+
+	// Transitions
+	transition: opacity $_speed-1 ease;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&.slider-horizontal{
+		top: 50%;
+		transform: translateY(-50%);
+		height: 90%;
+		padding: 0 $padding;
+		
+		&.slider-next {
+			right: 0;
+		}
+
+		&.slider-prev {
+			left: 0;
+		}
+	}
+		
+}

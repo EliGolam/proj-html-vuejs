@@ -1,0 +1,32 @@
+.shopping-item-card {
+  overflow: hidden;
+  position: relative;
+
+  // Background
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .shopping-item-hover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba($clr-cube-cod-gray, .3);
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    opacity: 0;
+
+    // Animations
+    transition: opacity $_speed-3 ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    * {
+      color: $clr-light;
+    }
+  }
+}

@@ -1,15 +1,19 @@
 <template>
   <article :style="bgImg">
-    <div class="flex head">
-      <h3 class="font-emphasized text-light">{{ card.title }}</h3>
-      <p class="process-number">{{ processId }}</p>
-    </div>
-
-    <div class="flex content" :class="`cardID-${card.id}`">
-      <div>
-        <h4 class="font-subtle-caps">{{ card.subtitle }}</h4>
-        <p>{{ card.content }}</p>
+    <div class="text-container">
+     
+      <div class="flex head">
+        <h3 class="font-emphasized text-light">{{ card.title }}</h3>
+        <p class="process-number">{{ processId }}</p>
       </div>
+
+      <div class="flex content" :class="`cardID-${card.id}`">
+        <div>
+          <h4 class="font-subtle-caps">{{ card.subtitle }}</h4>
+          <p>{{ card.content }}</p>
+        </div>
+      </div>
+       
     </div>
   </article>
 </template>
@@ -58,13 +62,22 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
 
+  
+}
+
+.text-container {
+  width: 100%;
+  height: 100%;
+
   color: $clr-light;
+  background-color: rgba($clr-dark, .4);
 
   padding: $_size-7;
 
   display: flex;
   flex-direction: column;
 
+  
   .head {
     align-items: center;
   }

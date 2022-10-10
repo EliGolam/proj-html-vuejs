@@ -1,11 +1,11 @@
 <template>
-  <div class="card" :class="cardShape">
-    <img :src="cardImgSrc" :alt="cardInfo.name">
+  <div class="shopping-item-card" :style="bgImg">
+    <!-- <img :src="cardImgSrc" :alt="cardInfo.name"> -->
 
-    <div class="hover-info flex">
+    <div class="shopping-item-hover flex">
       <h3 class="font-emphasized">{{ cardInfo.name }}</h3>
       <p>{{ cardCategories }}</p>
-      <p>{{ cardPrices }}</p>
+      <p class="prices">{{ cardPrices }}</p>
     </div>
   </div>
 </template>
@@ -23,10 +23,6 @@ export default {
         priceTagHigh: Number, 
         imgName: String}
     */
-    cardShape: {
-      type: String,
-      default: 'display', /* 'display' | 'square' */
-    }
   },
 
   data() {
@@ -40,8 +36,9 @@ export default {
   computed: {
     cardImgSrc() {
       const { imgName } = this.cardInfo;
+      const url = this.publicPath + this.directoryPath + imgName + this.imgFormat;
 
-      return this.publicPath + this.directoryPath + imgName + this.imgFormat;
+      return url;
     },
 
     cardCategories() {
@@ -50,8 +47,14 @@ export default {
 
     cardPrices() {
       const { priceTagLow, priceTagHigh } = this.cardInfo;
+      const lowPrice = Number(priceTagLow).toFixed(2);
+      const highPrice = Number(priceTagHigh).toFixed(2)
 
-      return `$${priceTagLow} $${priceTagHigh}`;
+      return `$${lowPrice} - $${highPrice}`;
+    }, 
+    
+    bgImg() {
+      return `background-image: url("${this.cardImgSrc}")`;
     }
   }
 }
@@ -60,47 +63,14 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
-.card {
-  position: relative;
+.shopping-item-card {
+  aspect-ratio: 1 / 1.25;
   cursor: pointer;
 
-  &.display {
-    aspect-ratio: 1 / 1.25;
-  }
-
-  &.square {
-    aspect-ratio: 1 / 1;
-  }
-  
-  overflow: hidden;
-  position: relative;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .hover-info {
-    position: absolute;
-      top: 0;
-
-    height: 100%;
-    width: 100%;
-    background-color: rgba($clr-cube-cod-gray, .3);
-
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    opacity: 0;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    * {
-      color: $clr-light;
-    }
+  .prices {
+    font-size: $fs-2;
+    margin-top: $_size-1;
   }
 }
+
 </style>
