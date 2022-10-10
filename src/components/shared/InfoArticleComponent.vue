@@ -37,6 +37,7 @@ export default {
             ctaPath: String (optional),
         } */
 				
+        /* ******************** */
         /* Optional Props */
         // Assign a custom HTML tag for title
         titleTag: { 
@@ -50,21 +51,24 @@ export default {
             default: true,
         },
 
-        // CTA button style
+        // CTA button style if present
         CTABtnType: {
             type: String,
             default: "dark",
+            /* 'light' | 'dark' */
         },
 
         // Choose which tag to put emphasis on
         emphasisedText: {
-            type: String, /* 'onTitle' | 'onContent' | 'none' */
+            type: String, 
             default: 'onTitle',
+            /* 'onTitle' | 'onContent' | 'none' */
         },
 
         // Add a "bigger" emphasised text if needed
         emphasisSize: String, /* 'big' */
 
+        // Change global font color within the Component
         globalColorSetting: String, /* 'light', 'dark', 'purple' */
     },
 
@@ -105,8 +109,6 @@ export default {
 }
 
 .global-light {
-  &> * {
-    color: $clr-light;
-  }
+  * { color: $clr-light !important; }
 }
 </style>
