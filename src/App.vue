@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="loading-screen flex-column-center" v-show="loading">
+    <div v-show="loading">
       <PageLoaderComponent />
     </div>
 
@@ -46,6 +46,6 @@ export default {
     AppHeaderWithHeroBG,
     AppFooter,
     PageLoaderComponent
-}
+  }
 }
 </script>
