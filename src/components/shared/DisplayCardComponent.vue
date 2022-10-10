@@ -3,7 +3,7 @@
     <img :src="cardImgSrc" :alt="cardInfo.name">
 
     <div class="hover-info flex">
-      <h5 class="font-emphasized">{{ cardInfo.name }}</h5>
+      <h3 class="font-emphasized">{{ cardInfo.name }}</h3>
       <p>{{ cardCategories }}</p>
       <p>{{ cardPrices }}</p>
     </div>

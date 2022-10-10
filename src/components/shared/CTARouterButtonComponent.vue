@@ -10,10 +10,11 @@
 
 <script>
 import RoutingNavLinkComponent from './RoutingNavLinkComponent.vue';
+
 export default {
     name: "CTARouterButtonComponent",
     props: {
-        buttonLink: Object,
+        buttonLink: Object, /* Format: { name: String, path: String } */
 
         buttonType: { /* 'light' | 'dark' */
           type: String,

@@ -18,7 +18,8 @@
 <script>
 import InfoArticleComponent from '@/components/shared/InfoArticleComponent.vue';
 
-import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData';
+import { PAGE_TEXT_DATA } from '@/assets/classes/InfoCardModels';
+import textData from '@/assets/data/textData.json';
 
 export default {
 	name: 'HomeHeroSplash',
@@ -26,7 +27,7 @@ export default {
 	data() {
     return {
       heroText: PAGE_TEXT_DATA.heroText,
-			heroInfo: PAGE_TEXT_DATA.heroInfo,
+			heroInfo: textData.heroInfo,
     }
   },
 

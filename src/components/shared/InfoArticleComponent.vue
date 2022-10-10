@@ -1,5 +1,5 @@
 <template>
-	<article>
+	<article :class="globalColor">
 
 		<component 
       :is="titleTag" 
@@ -63,6 +63,8 @@ export default {
 
         // Add a "bigger" emphasised text if needed
         emphasisSize: String, /* 'big' */
+
+        globalColorSetting: String, /* 'light', 'dark', 'purple' */
     },
 
     computed: {
@@ -81,6 +83,10 @@ export default {
                 name: this.info.cta,
                 path: this.info.ctaPath,
             } 
+        },
+
+        globalColor() {
+          return 'global-' + this.globalColorSetting;
         }
     },
 
@@ -99,5 +105,11 @@ export default {
 
 .info {
   margin: $_size-5 0;
+}
+
+.global-light {
+  &> * {
+    color: $clr-light;
+  }
 }
 </style>

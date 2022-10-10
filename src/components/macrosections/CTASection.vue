@@ -1,28 +1,47 @@
 <template>
-  <section>
-    <h2 class="font-subtle-caps">Try our seasonal products</h2>
-    <p class="font-emphasized">Order for pick-up or delivery to your home</p>
-    <button type="button" class="btn-default light">Show Now</button>
+  <section class="flex-center">
+
+    <InfoArticleComponent 
+			:info="ctaText"
+			:CTABtnType="'light'"
+			:emphasisedText="'onContent'"
+      :globalColorSetting="'light'"
+			class="info-card"
+		/>
+
   </section>
 </template>
 
 <script>
-  export default {
-    
+import InfoArticleComponent from '@/components/shared/InfoArticleComponent.vue';
+
+// Data
+import { PAGE_TEXT_DATA } from '@/assets/classes/InfoCardModels';
+
+export default {
+  data() {
+    return {
+      ctaText: PAGE_TEXT_DATA.ctaSectionText,
+    }
+  },
+
+  components: { 
+    InfoArticleComponent 
   }
+}
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 
 section {
+  // Background
   background-image: url('@/assets/images/call-to-action-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  color: $clr-light;
-
-  aspect-ratio: 21 / 7;
+  // Shape
+  aspect-ratio: 22 / 6;
 }
 </style>

@@ -18,7 +18,7 @@ import InfoArticleComponent from '@/components/shared/InfoArticleComponent.vue';
 import CardSlider from '@/components/shared/CardSlider_EmplaCarouselComponent.vue';
 
 // DATA
-import { PAGE_TEXT_DATA } from '@/assets/data/pageTextData.js';
+import { PAGE_TEXT_DATA } from '@/assets/classes/InfoCardModels.js';
 import shopData from '@/assets/data/shopData.json';
 
 
