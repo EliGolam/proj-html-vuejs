@@ -24,15 +24,23 @@
 }
 
 
-
 // Flex
 .flex {
-  display: flex
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center();
 }
+
+.flex-column-center {
+  @include flex-center();
+  flex-direction: column;
+}
+
 

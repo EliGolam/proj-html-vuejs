@@ -1,6 +1,6 @@
 <template>
   <article :style="bgImg">
-    <div class="text-container">
+    <div class="text-container flex-column">
      
       <div class="flex head">
         <h3 class="font-emphasized text-light">{{ card.title }}</h3>
@@ -73,9 +73,6 @@ article {
   background-color: rgba($clr-dark, .4);
 
   padding: $_size-7;
-
-  display: flex;
-  flex-direction: column;
 
   
   .head {

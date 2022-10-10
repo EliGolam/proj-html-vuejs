@@ -1,5 +1,5 @@
 <template>
-  <form class="flex" @submit.prevent>
+  <form class="flex-column" @submit.prevent>
     <label for="userEmail" class="font-emphasized">Subscribe to our Newsletter</label>
 
     <div class="form-input flex">
@@ -20,7 +20,6 @@ export default {
 
 form {
   /* Flex Container */
-  flex-direction: column;
   align-items: flex-end;
   row-gap: $_size-6;
 

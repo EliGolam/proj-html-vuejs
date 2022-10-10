@@ -1,5 +1,5 @@
 <template>
-  <footer class="container flex">
+  <footer class="container flex-column">
     <div class="row flex">
       <div>
         <LogoComponent />
@@ -64,7 +64,6 @@ export default {
 @import '@/assets/styles/variables';
 
 footer {
-  flex-direction: column;
   row-gap: $_size-7;
   .row {
     width: 100%;

@@ -52,9 +52,5 @@ header {
 	.nav-bar {
 		margin-left: auto; // Align Content to the right
 	}
-
-	.my-account {
-		margin: 0 $_size-1;
-	}
 }
 </style>
