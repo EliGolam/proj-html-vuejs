@@ -7,33 +7,57 @@
       <img :src="getPath(index)" alt="">
     </div>
 
-    <div class="info-box">
-      <p>Title bla bla</p>
+    <div class="info-box flex-center">
+      <div>
+        <InfoArticleComponent 
+          :info="infoText"
+          :withCTA="false"
+          :emphasisedText="'onContent'"
+        />
+
+        <FollowSocialButton :social="social" />
+      </div>
     </div>
+    
   </section>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        numderOfCards: 6,
-        publicPath: process.env.BASE_URL,
-        imgPath: {
-          path: 'img/',
-          prefix: 'social-',
-          imgFormat: '.jpg'
-        }
-      }
-    },
+import InfoArticleComponent from '../shared/InfoArticleComponent.vue';
+import FollowSocialButton from '../shared/FollowSocialButton.vue';
 
+import { PAGE_TEXT_DATA } from '@/assets/classes/InfoCardModels';
+
+
+
+export default {
+    data() {
+        return {
+            numderOfCards: 6,
+            publicPath: process.env.BASE_URL,
+            imgPath: {
+                path: "img/",
+                prefix: "social-",
+                imgFormat: ".jpg",
+            },
+            infoText: PAGE_TEXT_DATA.socialSectionText,
+            social: {
+              icon: 'instagram',
+              link: '#'
+            }
+        };
+    },
     methods: {
-      getPath(index) {
-        const { path, prefix, imgFormat } = this.imgPath;
-        return this.publicPath + path + prefix + index + imgFormat;
-      }
+        getPath(index) {
+            const { path, prefix, imgFormat } = this.imgPath;
+            return this.publicPath + path + prefix + index + imgFormat;
+        }
+    },
+    components: { 
+      InfoArticleComponent, 
+      FollowSocialButton 
     }
-  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -46,7 +70,7 @@
   "card3 card4 card5 card6";
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: $_size-2;
+  gap: $_size-4;
 }
 
 .card {
@@ -65,5 +89,6 @@
   grid-area: info;
 
   background-color: $clr-primary-light-purple;
+  text-align: center;
 }
 </style>

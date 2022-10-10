@@ -22,5 +22,9 @@
     "Order for pick-up or delivery to your home",
     "Shop Now",
     "/shop"
+  ],
+  "socialSectionArticle": [
+    "Made for Sharing",
+    "Let's stay in touch"
   ]
 }
