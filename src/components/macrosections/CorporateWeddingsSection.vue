@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="flow">
     <h2 class="title font-subtle-caps">Corporate &amp; Weddings</h2>
     <p class="font-emphasized">Baking Special Moments</p>
 
@@ -39,7 +39,7 @@ section {
 }
 
 .card-container {
-  $gap: $_size-8;
+  $gap: $_size-5;
 
   padding: $gap 0;
   gap: $gap;

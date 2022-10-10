@@ -9,9 +9,8 @@
       {{ info.title }}
     </component>
 
-		<p class="info"
-      :class="[contentEmphasis, emphasisSize]"
-      >{{ info.content }}
+		<p :class="[contentEmphasis, emphasisSize]">
+      {{ info.content }}
     </p>
 
 		<CTARouterButtonComponent v-if="withCTA"
