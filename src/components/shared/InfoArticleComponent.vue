@@ -1,6 +1,7 @@
 <template>
-	<article :class="globalColor">
+	<article :class="globalColor" class="flow">
 
+    <!-- Optional ability to customize the header tag for this article for accessibility purposes -->
 		<component 
       :is="titleTag" 
       :class="[titleEmphasis, emphasisSize]"
@@ -101,10 +102,6 @@ export default {
 
 .defaultStyle {
   color: $clr-dark;
-}
-
-.info {
-  margin: $_size-5 0;
 }
 
 .global-light {
