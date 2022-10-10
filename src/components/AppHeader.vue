@@ -21,14 +21,14 @@ import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
 import RoutingNavComponent from '@/components/shared/RoutingNavComponent.vue';
 
 // Import Data
-import { headerLinks } from '@/assets/data/navLinksData.json';
+import navLinksData from '@/assets/data/navLinksData.json';
 import LogoComponent from './shared/LogoComponent.vue';
 
 
 export default {
 	data() {
 		return {
-			links: headerLinks,
+			links: navLinksData.headerLinks,
 		}
 	},
   
