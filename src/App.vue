@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <div class="loading-screen flex-column-center" v-show="loading">
-      <AppHeader /> 
       <PageLoaderComponent />
     </div>
 
-    <div v-show="!loading">
+    <div>
       <!-- v-if to prevent duplicate headers since homeview has one -->
       <AppHeader v-if="$route.name !== 'home'" /> 
       <AppHeaderWithHeroBG v-else />
@@ -39,7 +38,7 @@ export default {
     setTimeout(() => {
       console.log(this.loading);
       this.loading = false;
-    }, 6000);
+    }, 5000);
   },
 
   components: {
@@ -50,5 +49,3 @@ export default {
 }
 }
 </script>
-
-

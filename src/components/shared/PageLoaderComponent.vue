@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="loading-screen">
     <div class="svg-clipped flex-column" >
       <div class="loading-fill">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320">
@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <clipPath id="loading-text">
           <text :x="positionLoader.x" :y="positionLoader.y" class="loading-word">bakery.</text>
@@ -37,6 +37,21 @@
 @import '@/assets/styles/variables';
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
+$animationDuration: 4500ms;
+
+.loading-screen {
+  position: absolute;
+    top: 0;
+    z-index: 10;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: $clr-primary-light;
+
+  animation: 600ms ease $animationDuration forwards fadeOut;
+}
+
 .loading-word {
   font-family: 'Ultra', $ff-secondary;
   font-size: 15rem;
@@ -58,7 +73,7 @@
     fill: $clr-primary;
 
     transform: translateY(65%);
-    animation: 6000ms linear forwards fill-loader;
+    animation: $animationDuration linear forwards fill-loader;
   }
 
 }
@@ -66,11 +81,36 @@
 @keyframes fill-loader {
   from {
     transform: translateY(65%);
-    
+  }
+
+  25% {
+    transform: translateY(55%);
+  }
+
+  40% {
+    transform: translateY(55%);
+  }
+
+  75% {
+    transform: translateY(35%);
+  }
+
+  90% {
+    transform: translateY(35%);
   }
 
   to {
-    transform: translateY(0%);
+    transform: translateY(20%);
+  }
+};
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 </style>
