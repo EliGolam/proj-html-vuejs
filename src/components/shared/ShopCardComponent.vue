@@ -1,6 +1,6 @@
 <template>
   <div class="shopping-item-card text-primary-dark">
-    <figure class="flex">
+    <figure class="flex-column">
       <div class="img-container">
         <img :src="cardImgSrc" :alt="cardInfo.name">
 
@@ -76,10 +76,7 @@ export default {
  
 
   figure {
-    flex-direction: column;
     gap: $_size-3;
-
-    
   }
   .img-container {
     position: relative;
