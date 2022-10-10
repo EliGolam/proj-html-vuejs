@@ -1,13 +1,13 @@
 <template>
-  <div class="alert-box flex">
-    <div class="alert-item square-container flex-center">
+  <div class="alert-box flex-column">
+    <div class="alert-item square-container flex-column-center">
       <font-awesome-icon icon="fa-solid fa-bread-slice" class="icon" />
       <p class="text">Demos</p>
     </div>
 
 
     <div v-for="(alert, index) in alerts" :key="index"
-      class="alert-item square-container flex-center"
+      class="alert-item square-container flex-column-center"
     >
         <p class="price">{{alert.price}}</p>
         <p class="text">{{alert.text}}</p>
@@ -31,7 +31,6 @@ import offerAlertsData from '@/assets/data/offerAlertsData.json'
 @import '@/assets/styles/variables';
 
 .alert-box {
-  flex-direction: column;
   gap: $_size-2;
 }
 .alert-item {
@@ -41,7 +40,6 @@ import offerAlertsData from '@/assets/data/offerAlertsData.json'
   border-radius: .6em;
   background-color: $clr-light;
 
-  flex-direction: column;
 
   box-shadow: 2px 2px 10px rgba($clr-primary-dark, .4);
 
