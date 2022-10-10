@@ -1,15 +1,15 @@
 <template>
-  <div class="flex-center">
+  <div class="cart-preview flex-center">
     <ShoppingCartComponent />
 
-    <div class="counter flex">
+    <div class="counter flex-center round-container">
       <p>{{ itemsInCart }}</p>
     </div>
   </div>
 </template>
 
 <script>
-import ShoppingCartComponent from './ShoppingCartComponent.vue';
+import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
 
 export default {
   name: 'ShoppingCartWithCounter',
@@ -27,5 +27,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/variables';
 
+.cart-preview {
+  gap: $_size-1;
+}
 </style>
