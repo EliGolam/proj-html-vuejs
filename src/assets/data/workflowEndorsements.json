@@ -1,10 +1,22 @@
 [
    {
-    "endorsement": "Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.",
+    "title": "Don't just take our word for it",
+    "content": "Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.",
     "person": "Rachel Cooper, Founder"
    },
    {
-    "endorsement": "Since I moved out of Italy, getting fresh bread has always been a struggle. But with Bakery Avada, it's just like being back in Piedmont! Mamma Mia!",
+    "title": "Come in Italia!",
+    "content": "Since I moved out of Italy, getting fresh bread has always been a struggle. But with Bakery Avada, it's just like being back in Piedmont! Mamma Mia!",
     "person": "Elena, Italian person"
+   },
+   {
+    "title": "From an orphan",
+    "content": "This Bakery literally resurrected my family, including my cats! I love them sooooo much ♥",
+    "person": "Orphan, Tragic Backstory&trade;"
+   },
+   {
+    "title": "Found a girlfriend",
+    "content": "After a month of subscription to Bakery, the delivery girl was this gorgeous woman. TLDR we are now engaged and she completes me in every way.",
+    "person": "Julia, newly engaged"
    }
 ]

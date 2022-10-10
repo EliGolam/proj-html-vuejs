@@ -52,11 +52,9 @@ export default {
     },
     methods: {
       nextSlide() {
-          console.log("Test Scroll");
           this.emblaApi.scrollNext();
       },
       prevSlide() {
-          console.log("Test Scroll");
           this.emblaApi.scrollPrev();
       },
     },
