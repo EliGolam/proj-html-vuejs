@@ -23,15 +23,25 @@
 
 
 // NAV
+.nav-bar {
+	// Local Variables
+	$c-gap: $_size-2;
+	
+	// Flex Container
+	display: flex;
+	column-gap: $c-gap;
+}
+
+
 .nav-link {
   cursor: pointer;
 
   // Font
   font-size: $fs-8;
-  
   text-transform: uppercase;
   color: $clr-primary-dark-purple;
 
+  // Shape of container
   padding: $_size-4 0;
   border-bottom: 2px solid transparent;
 

@@ -12,7 +12,7 @@
 import ShoppingCartComponent from '@/components/ShoppingCartComponent.vue';
 
 export default {
-  name: 'ShoppingCartWithCounter',
+  name: 'CartWithCounter',
   props: {
     itemsInCart: {
       type: Number,
@@ -30,6 +30,16 @@ export default {
 @import '@/assets/styles/variables';
 
 .cart-preview {
+  // Flex Container
   gap: $_size-1;
+
+  // Flex Items
+  .counter {
+    // Size
+    width: $_size-4;
+
+    // Aesthetic
+    background-color: $clr-primary-light-purple;
+  }
 }
 </style>

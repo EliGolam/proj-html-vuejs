@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="nav-bar">
 
     <RoutingNavLinkComponent v-for="navLink in navLinks" 
       :key="navLink.name" 
@@ -20,6 +20,13 @@ export default {
 		/* Format
 		[ { name: 'String', path: 'String' } ]
 		*/
+
+    /* Optional Props */
+    isLowerCase: {
+      type: Boolean,
+      default: false,
+      // Optional Prop in case lower case is needed for the nav-link elements (such as in the footer)
+    }
 	},
 
 	components: { 
@@ -31,12 +38,5 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables';
 	
-nav {
-	// Local Variables
-	$c-gap: $_size-2;
-	
-	// Flex Container
-	display: flex;
-	column-gap: $c-gap;
-}
+
 </style>
