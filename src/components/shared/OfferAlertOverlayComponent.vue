@@ -36,7 +36,7 @@ import offerAlertsData from '@/assets/data/offerAlertsData.json'
 .alert-item {
   cursor: pointer;
 
-  width: $_size-9;
+  width: $_size-8;
   border-radius: .6em;
   background-color: $clr-light;
 
@@ -44,11 +44,11 @@ import offerAlertsData from '@/assets/data/offerAlertsData.json'
   box-shadow: 2px 2px 10px rgba($clr-primary-dark, .4);
 
   .icon {
-    font-size: $fs-2;
+    font-size: $fs-4;
   }
 
   .price {
-    font-size: $fs-2;
+    font-size: $fs-3;
     font-weight: $fw-bold;
     font-family: $ff-secondary;
     text-align: center;
@@ -60,12 +60,38 @@ import offerAlertsData from '@/assets/data/offerAlertsData.json'
 
     &::before {
       content: "\0024";
-      font-size: $fs-4;
+      font-size: $fs-6;
       position: absolute;
         top: 0;
         right: 100%; 
     }
   }
+
+  .text {
+    font-size: $fs-8;
+  }
+
+  // MEDIA QUERIES
+  @media only screen and (min-width: $md-breakpoint) {
+    width: $_size-9;
+
+    .icon {
+      font-size: $fs-2;
+    }
+
+    price {
+      font-size: $fs-2;
+  
+      &::before {
+        font-size: $fs-4;
+      }
+    }
+
+    .text {
+      font-size: $fs-6;
+    }
+  }
+
 
   // HOVER
   transition: transform $_speed-5 $_cubicB-bounce;
