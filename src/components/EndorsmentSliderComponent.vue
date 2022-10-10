@@ -5,7 +5,7 @@
         v-for="endorsement in endorsements" 
         :key="endorsement.person"
       >
-        <div class="info-card"
+        <div class="info-card flow"
           @mouseover="pauseAutoplay()"
           @mouseleave="resumeAutoplay()"
         >
