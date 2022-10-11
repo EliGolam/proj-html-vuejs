@@ -38,7 +38,7 @@ export default {
         return {
             endorsements: workflowEndorsements,
             autoplayIntevalID: undefined,
-            autoplayDelay: 15 * 1000, // 10 sec
+            autoplayDelay: 10 * 1000, // 10 sec
             counter: 0,
         };
     },

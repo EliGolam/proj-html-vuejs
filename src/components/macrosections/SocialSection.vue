@@ -8,14 +8,14 @@
     </div>
 
     <div class="info-box flex-center">
-      <div>
+      <div class="flow">
         <InfoArticleComponent 
           :info="infoText"
           :withCTA="false"
           :emphasisedText="'onContent'"
         />
 
-        <FollowSocialButtonComponent :social="social" />
+        <FollowSocialButtonComponent :social="social" class="social" />
       </div>
     </div>
     
@@ -83,6 +83,10 @@ export default {
     height: 100%;
     object-fit: cover;
   }
+}
+
+.social {
+  margin-top: $_size-3;
 }
 
 .info-box {

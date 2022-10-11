@@ -1,5 +1,5 @@
 <template>
-  <a :href="social.link" class="btn-default dark flex">
+  <a :href="social.link" class="btn-default dark flex centered">
     <font-awesome-icon :icon="['fab', social.icon]" class="icon" />
     <p>Follow Us</p>
   </a>
