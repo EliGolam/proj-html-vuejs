@@ -1,6 +1,9 @@
 /* Color Scheme */
 @import '_color-scheme.scss';
 
+/* Mixins */
+@import '_mixins.scss';
+
 // GRADIENTS
 $dark-gradient: linear-gradient(
     rgba($clr-primary, 1),
@@ -90,3 +93,5 @@ $_speed-5: 500ms;
 
 /* Cubic Beziers */ 
 $_cubicB-bounce: cubic-bezier(.03,-0.45,.5,2.5);
+
+

@@ -16,3 +16,27 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin fs-1 {
+  font-size: calc( $fs-2 + .05vw);
+
+  @media only screen and (min-width: $md-breakpoint) {
+    font-size: $fs-1;
+  }
+}
+
+@mixin fs-2 {
+  font-size: calc( $fs-3 + .05vw);
+
+  @media only screen and (min-width: $md-breakpoint) {
+    font-size: $fs-2;
+  }
+}
+
+@mixin fs-3 {
+  font-size: calc( $fs-4 + .05vw);
+
+  @media only screen and (min-width: $md-breakpoint) {
+    font-size: $fs-3;
+  }
+}
