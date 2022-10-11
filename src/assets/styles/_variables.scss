@@ -41,9 +41,9 @@ $ff-default: 'Montserrat', $ff-fallback;
 $ff-secondary: 'Source Serif Pro', serif;
 
 // Size
-$fs-1: 3rem;
-$fs-2: 2rem;
-$fs-3: 1.4rem;
+$fs-1: calc(1.5rem + 2vw);
+$fs-2: calc(.8rem + 1.5vw);
+$fs-3: calc(.6rem + 1.5vw);
 $fs-4: 1.2rem;
 $fs-5: 1rem;
 $fs-6: .9rem;

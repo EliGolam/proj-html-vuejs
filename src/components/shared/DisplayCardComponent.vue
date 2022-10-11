@@ -3,7 +3,7 @@
     <!-- <img :src="cardImgSrc" :alt="cardInfo.name"> -->
 
     <div class="shopping-item-hover flex">
-      <h3 class="font-emphasized">{{ cardInfo.name }}</h3>
+      <h3 class="font-emphasized item-name">{{ cardInfo.name }}</h3>
       <p>{{ cardCategories }}</p>
       <p class="prices">{{ cardPrices }}</p>
     </div>
@@ -67,8 +67,13 @@ export default {
   aspect-ratio: 1 / 1.25;
   cursor: pointer;
 
+  .item-name {
+    font-size: $fs-3;
+    text-align: center;
+  }
+
   .prices {
-    font-size: $fs-2;
+    font-size: $fs-3;
     margin-top: $_size-1;
   }
 }
