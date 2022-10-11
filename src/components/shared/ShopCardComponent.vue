@@ -5,9 +5,9 @@
         <img :src="cardImgSrc" :alt="cardInfo.name">
 
         <div class="shopping-item-hover flex">
-          <button type="button">Select Options</button>
+          <button type="button" class="shop-option">Select Options</button>
           /
-          <button type="button">Quick View</button>
+          <button type="button" class="shop-option">Quick View</button>
         </div>
       </div>
 
@@ -76,6 +76,10 @@ export default {
  
   .price {
     font-size: $fs-4;
+  }
+
+  .shop-option {
+    font-size: $fs-5;
   }
 
   figure {
