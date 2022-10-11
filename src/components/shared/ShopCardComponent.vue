@@ -12,8 +12,8 @@
       </div>
 
       <figcaption>
-        <h3 class="font-emphasized">{{ cardInfo.name }}</h3>
-        <p>{{ cardPrices }}</p>
+        <h3 class="font-emphasized card-name">{{ cardInfo.name }}</h3>
+        <p class="price">{{ cardPrices }}</p>
       </figcaption>
     </figure>
   </div>
@@ -74,6 +74,9 @@ export default {
 
 .shopping-item-card {
  
+  .price {
+    font-size: $fs-4;
+  }
 
   figure {
     gap: $_size-3;

@@ -54,7 +54,8 @@ I organized them into the **components** folder with two additional subfolders:
 
 ## Step 4: Creating Sections
 
-This is where the actual coding part begins. I mpved through the page by implementing each macrosection of the page and adding the necessary components each time. 
+This is where the actual coding part begins. I mpved through the page by implementing each macrosection of the page and adding the necessary components each time.
+For each section my focus are scalability, readability and accessibility.
 
 ## Versions
 
