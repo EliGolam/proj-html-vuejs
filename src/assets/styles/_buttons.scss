@@ -45,6 +45,7 @@
 
 		&:hover {
 			@include lightScheme();
+      background-color: $clr-primary-light;
 		}
 	}
 }
