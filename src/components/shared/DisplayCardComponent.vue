@@ -29,7 +29,7 @@ export default {
     return {
       publicPath: process.env.BASE_URL,
       directoryPath: 'shopImg/',
-      imgFormat: '.jpg'
+      imgFormat: '-400x510.jpg'
     }
   },
 

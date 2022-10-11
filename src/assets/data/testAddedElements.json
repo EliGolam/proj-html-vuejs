@@ -4,11 +4,25 @@
     "content": "This is 100% the best bread that has ever been baked. It's so tasty it fixed my relationship with my wife.",
     "person": "George, Asylum Patient"
   },
-  "shop": {
+  "shop1": {
     "name": "Premium Bread",
     "categories": ["Bread"],
     "priceTagLow": 14,
     "priceTagHigh": 30,
     "imgName": "premium-bread"   
+  },
+  "shop2": {
+    "name": "Home Bread",
+    "categories": ["Bread"],
+    "priceTagLow": 10,
+    "priceTagHigh": 25,
+    "imgName": "home-bread"   
+  },
+  "shop3": {
+    "name": "Small Cupcake",
+    "categories": ["Cake", "Pastries"],
+    "priceTagLow": 12,
+    "priceTagHigh": 28,
+    "imgName": "small-cupcake"   
   }
 }
