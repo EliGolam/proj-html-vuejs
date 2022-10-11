@@ -21,6 +21,8 @@ $default-font-settings: $fw-default $fs-default $ff-default;
   height: 100vh;
   overflow: auto;
 
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
