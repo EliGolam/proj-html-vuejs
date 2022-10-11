@@ -99,23 +99,28 @@ export default {
 
   .shopping-item-hover {
     flex-direction: row;
-    gap: $_size-3;
+    gap: $_size-1;
     position: absolute;
       top: 0;
 
     color: $clr-light;  
-    font-size: $fs-4;
+    
   
     button {
       cursor: pointer;
       text-transform: uppercase;
       background: none;
+      font-size: $fs-6;
 
       // Animations
       transition: transform $_speed-2 ease;
       
       &:hover {
         transform: scale(1.1);
+      }
+
+      @media only screen and (min-width: $lg-breakpoint) {
+        font-size: $fs-5;
       }
     }
   }

@@ -1,0 +1,14 @@
+{
+  "endorsement": {
+    "title": "OMG THE BEST",
+    "content": "This is 100% the best bread that has ever been baked. It's so tasty it fixed my relationship with my wife.",
+    "person": "George, Asylum Patient"
+  },
+  "shop": {
+    "name": "Premium Bread",
+    "categories": ["Bread"],
+    "priceTagLow": 14,
+    "priceTagHigh": 30,
+    "imgName": "premium-bread"   
+  }
+}
