@@ -15,7 +15,8 @@
 
 <script>
 import LocationsInfoComponent from '@/components/LocationsInfoComponent.vue';
-  export default {
+  
+export default {
     name: "LocationCardComponent",
     props: {
         cardInfo: Object,

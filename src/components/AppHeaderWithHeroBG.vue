@@ -24,7 +24,7 @@ import InfoArticleComponent from '@/components/shared/InfoArticleComponent.vue';
 import AppHeader from './AppHeader.vue';
 
 import { PAGE_TEXT_DATA } from '@/assets/classes/InfoCardModels';
-import textData from '@/assets/data/textData.json';
+import headerTextData from '@/assets/data/headerTextData.json';
 
 
 export default {
@@ -33,7 +33,7 @@ export default {
 	data() {
     return {
       heroText: PAGE_TEXT_DATA.heroText,
-			heroInfo: textData.heroInfo,
+			heroInfo: headerTextData.heroInfo,
     }
   },
 

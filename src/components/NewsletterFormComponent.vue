@@ -1,17 +1,25 @@
 <template>
   <form class="flex-column" @submit.prevent>
-    <label for="userEmail" class="font-emphasized">Subscribe to our Newsletter</label>
+    <label for="userEmail" class="font-emphasized">{{ form.label }}</label>
 
     <div class="form-input flex">
-      <input type="email" name="userEmail" id="userEmail" placeholder="Enter email address*">
-      <button type="submit" class="btn-default dark">Subscribe</button>
+      <input type="email" name="userEmail" id="userEmail" :placeholder="form.placeholder">
+      <button type="submit" class="btn-default dark">{{ form.ctaButtonText }}</button>
     </div>
   </form>
 </template>
 
 <script>
+import footerTextData from '@/assets/data/footerTextData.json'
+
 export default {
-  name: 'NewsLetterForm'
+  name: 'NewsLetterForm',
+
+  data() {
+    return {
+      form: footerTextData.newsletter,
+    }
+  }
 }
 </script>
 
